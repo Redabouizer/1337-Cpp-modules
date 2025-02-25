@@ -6,7 +6,7 @@
 /*   By: rbouizer <rbouizer@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/25 00:03:59 by rbouizer          #+#    #+#             */
-/*   Updated: 2025/02/25 00:12:47 by rbouizer         ###   ########.fr       */
+/*   Updated: 2025/02/25 01:01:10 by rbouizer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,11 +15,8 @@
 #include "phonebook.hpp"
 
 
-//
-
 Contact::Contact()
-{
-	
+{	
 }
 
 Contact::Contact(int _Index,
@@ -42,11 +39,11 @@ void	Contact::print(void)
 	std::cout << "|         ";
 	std::cout << index;
 	std::cout << "|";
-	std::cout << ten_char(first_name);
+	std::cout << fmt10(first_name);
 	std::cout << "|";
-	std::cout << ten_char(last_name);
+	std::cout << fmt10(last_name);
 	std::cout << "|";
-	std::cout << ten_char(nick_name);
+	std::cout << fmt10(nick_name);
 	std::cout << "|" << std::endl;
 }
 

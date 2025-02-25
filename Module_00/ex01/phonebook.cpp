@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: rbouizer <rbouizer@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/02/25 00:04:24 by rbouizer          #+#    #+#             */
-/*   Updated: 2025/02/25 00:04:27 by rbouizer         ###   ########.fr       */
+/*   Created: 2024/11/19 19:19:41 by zderfouf          #+#    #+#             */
+/*   Updated: 2025/02/25 01:14:37 by rbouizer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,9 +45,9 @@ void	Phonebook::search(Phonebook _PHONE)
 
 		std::cout << "Enter index to be looked for:";
 		std::getline(std::cin, line);
-		if (!line.size() || !parse(line))
+		if (!line.size() || !isPhone(line))
 			continue ;
-		index = my_atol(line);
+		index = toLong(line);
 
 		if ( index < 0 || index > _PHONE.C_count - 1)
 		{
@@ -74,7 +74,7 @@ void	Phonebook::add(Phonebook *_PHONE)
 			std::cout << "Nickname:";
 		if (i == 3)
 		{
-			phone_number(&str[i++]);
+			getPhone(&str[i++]);
 			continue ;
 		}
 		if (i == 4)
@@ -84,7 +84,7 @@ void	Phonebook::add(Phonebook *_PHONE)
 			std::getline(std::cin, str[i]);
 			if (std::cin.eof())
 				return ;
-			if (str[i].empty() || !parse_(str[i]))
+			if (str[i].empty() || !isPrint(str[i]))
 				std::cout << "Can't have that! Retry:";
 			else
 				break ;

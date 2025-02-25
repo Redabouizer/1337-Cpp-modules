@@ -6,100 +6,84 @@
 /*   By: rbouizer <rbouizer@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/25 00:04:36 by rbouizer          #+#    #+#             */
-/*   Updated: 2025/02/25 00:04:38 by rbouizer         ###   ########.fr       */
+/*   Updated: 2025/02/25 01:02:05 by rbouizer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-# include "phonebook.hpp"
+#include "phonebook.hpp"
 
-long	my_atol(std::string str)
+long toLong(std::string str)
 {
-	long i, nb, s;
+    long result = 0;
+    size_t i = 0;
+    int sign = 1;
 
-	(1) && (i = 0, nb = 0, s = 1);
-	if (str[i] == '-' || str[i] == '+')
-	{
-		if (str[i] == '-')
-			s *= -1;
-		i++;
-	}
-	if (!_parse(str))
-		return (-1);
-	while (std::isdigit(str[i]))
-	{
-		nb = nb * 10 + (str[i] - '0');
-		if (nb > INT_MAX)
-			return (-1);
-		i++;
-	}
-	return (nb * s);
+    if (str[i] == '-' || str[i] == '+') {
+        sign = (str[i] == '-') ? -1 : 1;
+        i++;
+    }
+
+    if (!isNumSign(str.substr(i))) {
+        return -1;
+    }
+
+    while (i < str.length() && std::isdigit(str[i])) {
+        result = result * 10 + (str[i] - '0');
+        if (result > INT_MAX) {
+            return -1;
+        }
+        i++;
+    }
+
+    return result * sign;
 }
 
-void	phone_number(std::string *str)
-{
-	std::cout << "Phone number:";
-	std::getline(std::cin, *str);
-	while (!std::cin.eof() && (!parse(*str) || (*str).empty()))
-	{
-		std::cout << "Enter a valide number:";
-		std::getline(std::cin, *str);
-	}
+void getPhone(std::string *str) {
+    while (true) {
+        std::cout << "Phone number: ";
+        std::getline(std::cin, *str);
+
+        if (std::cin.eof()) {
+            break;
+        }
+
+        if (isPhone(*str) && !(*str).empty()) {
+            break;
+        }
+
+        std::cout << "Enter a valid number: ";
+    }
 }
 
-std::string ten_char(std::string word)
+std::string fmt10(std::string word)
 {
-	std::string tmp;
-
-	if (word.size() > 10)
-	{
-		tmp = word.substr(0, 10);
-		tmp[9] = '.';
-		return tmp;
-	}
-	else
-	{
-		int spaces_count;
-
-		tmp = "          ";
-		spaces_count = 10 - word.size();
-		tmp = tmp.substr(0, spaces_count) + word;
-		return tmp;
-	}
-	return word;
+    if (word.length() > 10)
+        return word.substr(0, 9) + ".";
+    else
+        return std::string(10 - word.length(), ' ') + word;
 }
 
-bool	parse(std::string str)
-{
-	int i = 0;
-	while (str[i])
-	{
-		if (!std::isdigit(str[i]) || !std::isprint(str[i]))
-			return (false);
-		i++;
-	}
-	return (true);
+bool isPhone(std::string str) {
+    for (size_t i = 0; i < str.length(); i++) {
+        if (!std::isdigit(str[i]) || !std::isprint(str[i])) {
+            return false;
+        }
+    }
+    return true;
 }
 
-bool	parse_(std::string str)
-{
-	int i = 0;
-	while (str[i])
-	{
-		if (!std::isprint(str[i]))
-			return (false);
-		i++;
-	}
-	return (true);
+bool isPrint(std::string str) {
+    for (size_t i = 0; i < str.length(); i++) {
+        if (!std::isprint(str[i]))
+            return false;
+    }
+    return true;
 }
 
-bool	_parse(std::string str)
-{
-	int i = 0;
-	while (str[i])
-	{
-		if (!std::isdigit(str[i]) && str[i] != '-' && str[i] != '+')
-			return (false);
-		i++;
-	}
-	return (true);
+bool isNumSign(std::string str) {
+    for (size_t i = 0; i < str.length(); i++) {
+        if (!std::isdigit(str[i]) && str[i] != '-' && str[i] != '+')
+            return false;
+    }
+    return true;
 }

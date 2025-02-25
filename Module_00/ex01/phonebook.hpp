@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: rbouizer <rbouizer@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/02/25 00:04:29 by rbouizer          #+#    #+#             */
-/*   Updated: 2025/02/25 00:04:32 by rbouizer         ###   ########.fr       */
+/*   Created: 2025/02/25 00:56:32 by rbouizer          #+#    #+#             */
+/*   Updated: 2025/02/25 00:58:28 by rbouizer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,12 +16,12 @@
 #include "contact.hpp"
 #include <climits>
 
-bool		parse(std::string str);
-bool		_parse(std::string str);
-bool		parse_(std::string str);
-long		my_atol(std::string str);
-std::string	ten_char(std::string word);
-void		phone_number(std::string *str);
+bool		isPhone(std::string str);
+bool		isNumSign(std::string str);
+bool        isPrint(std::string str);
+long        toLong(std::string str);
+std::string fmt10(std::string word);
+void        getPhone(std::string *str);
 
 class Phonebook
 {
