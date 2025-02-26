@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   utils.cpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rbouizer <rbouizer@student.42.fr>          +#+  +:+       +#+        */
+/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/25 00:04:36 by rbouizer          #+#    #+#             */
-/*   Updated: 2025/02/25 01:02:05 by rbouizer         ###   ########.fr       */
+/*   Updated: 2025/02/26 01:53:36 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,10 @@ long toLong(std::string str)
     size_t i = 0;
     int sign = 1;
 
-    if (str[i] == '-' || str[i] == '+') {
-        sign = (str[i] == '-') ? -1 : 1;
+    if (str[i] == '-') {
+        sign = -1;
+        i++;
+    } else if (str[i] == '+') {
         i++;
     }
 
@@ -57,10 +59,10 @@ void getPhone(std::string *str) {
 
 std::string fmt10(std::string word)
 {
-    if (word.length() > 10)
+    if (word.length() > 10) {
         return word.substr(0, 9) + ".";
-    else
-        return std::string(10 - word.length(), ' ') + word;
+    }
+    return std::string(10 - word.length(), ' ') + word;
 }
 
 bool isPhone(std::string str) {
@@ -74,16 +76,20 @@ bool isPhone(std::string str) {
 
 bool isPrint(std::string str) {
     for (size_t i = 0; i < str.length(); i++) {
-        if (!std::isprint(str[i]))
+        if (!std::isprint(str[i])) {
             return false;
+        }
     }
     return true;
 }
 
 bool isNumSign(std::string str) {
     for (size_t i = 0; i < str.length(); i++) {
-        if (!std::isdigit(str[i]) && str[i] != '-' && str[i] != '+')
-            return false;
+        if (!std::isdigit(str[i])) {
+            if (str[i] != '-' && str[i] != '+') {
+                return false;
+            }
+        }
     }
     return true;
 }

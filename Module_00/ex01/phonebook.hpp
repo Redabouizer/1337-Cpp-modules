@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   phonebook.hpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rbouizer <rbouizer@student.42.fr>          +#+  +:+       +#+        */
+/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/25 00:56:32 by rbouizer          #+#    #+#             */
-/*   Updated: 2025/02/25 00:58:28 by rbouizer         ###   ########.fr       */
+/*   Updated: 2025/02/26 02:13:35 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,9 +31,9 @@ private:
 	Contact contact[8];
 public:
 	Phonebook();
-	void	add(Phonebook *_PHONE);
-	void	search(Phonebook _PHONE);
-	void	print_table(Phonebook _PHONE);
+	void	add();
+	void	search();
+	void	print_table();
 };
 
 #endif
