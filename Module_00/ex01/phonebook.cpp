@@ -1,15 +1,3 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   phonebook.cpp                                      :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/19 19:19:41 by zderfouf          #+#    #+#             */
-/*   Updated: 2025/02/26 02:13:50 by marvin           ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #include "phonebook.hpp"
 
 Phonebook::Phonebook() : C_count(0), Index(0) {}
@@ -64,15 +52,29 @@ void Phonebook::search()
 
 void Phonebook::add()
 {
+    int i = 0;
     std::string str[5];
     const std::string prompts[] = {"First name: ", "Last name: ", "Nickname: ", "Phone number: ", "Darkest secret: "};
 
-    for (int i = 0; i < 5; i++)
+    while (!std::cin.eof() && i < 5)
     {
+        std::cout << prompts[i];
+
+        if (i == 3)
+        {
+            getPhone(&str[i]); 
+            i++;
+            continue;
+        }
+
         while (true)
         {
-            std::cout << prompts[i];
-            if (!std::getline(std::cin, str[i]) || str[i].empty())
+            std::getline(std::cin, str[i]);
+            
+            if (std::cin.eof())
+                return;
+
+            if (str[i].empty())
             {
                 std::cout << "Field cannot be empty. Retry: ";
                 continue;
@@ -84,14 +86,23 @@ void Phonebook::add()
                 continue;
             }
 
+            if (i != 3 && !isPrint(str[i]))
+            {
+                std::cout << "Invalid input. Retry: ";
+                continue;
+            }
+
             break;
         }
+
+        i++;
     }
 
     contact[Index] = Contact(Index, str[0], str[1], str[2], str[3], str[4]);
 
     if (C_count < 8)
         C_count++;
-    
-    Index = (Index + 1) % 8;
+    Index++;
+    if (Index == 8)
+        Index = 0;
 }

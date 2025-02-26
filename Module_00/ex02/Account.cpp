@@ -1,15 +1,3 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   Account.cpp                                        :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/02/25 00:04:41 by rbouizer          #+#    #+#             */
-/*   Updated: 2025/02/26 02:33:01 by marvin           ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #include "Account.hpp"
 #include <iomanip>
 #include <iostream>
@@ -38,16 +26,18 @@ Account::~Account() {
     _nbAccounts--;
 }
 
-// Display timestamp
-void	Account::_displayTimestamp( void )
+void Account::_displayTimestamp(void)
 {
-	time_t now = time(NULL); 
-	tm *s_lt = localtime(&now); 
+    time_t now;
+    struct tm *s_lt;
 
-	char buffer[20];  // Taille suffisante pour stocker "[YYYYMMDD_HHMMSS]"
-	strftime(buffer, sizeof(buffer), "[%Y%m%d_%H%M%S] ", s_lt); // Formattage manuel
+    now = time(NULL);  // Get the current time in seconds since the epoch
+    s_lt = localtime(&now);  // Convert to local time
 
-	std::cout << buffer;
+    char timestamp[20];  // To hold the formatted string (e.g., YYYYMMDD_HHMMSS)
+    strftime(timestamp, sizeof(timestamp), "[%Y%m%d_%H%M%S]", s_lt);  // Format the time
+
+    std::cout << timestamp << " ";  // Output the timestamp
 }
 
 // Getters for static members

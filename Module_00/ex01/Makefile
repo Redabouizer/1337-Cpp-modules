@@ -1,15 +1,3 @@
-# **************************************************************************** #
-#                                                                              #
-#                                                         :::      ::::::::    #
-#    Makefile                                           :+:      :+:    :+:    #
-#                                                     +:+ +:+         +:+      #
-#    By: rbouizer <rbouizer@student.42.fr>          +#+  +:+       +#+         #
-#                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2025/02/25 00:04:15 by rbouizer          #+#    #+#              #
-#    Updated: 2025/02/25 00:05:02 by rbouizer         ###   ########.fr        #
-#                                                                              #
-# **************************************************************************** #
-
 NAME = phonebook
 
 FILES = main.cpp phonebook.cpp contact.cpp utils.cpp
@@ -26,7 +14,7 @@ $(NAME): $(SRCS)
 	@$(CC) $(CPPFLAGS) $^ -o $@
 
 %.o: %.c phonebook.hpp contact.hpp
-	@$(CC) $(CFLAGS) -c $< -o $@
+	@$(CC) $(CPPFLAGS) -c $< -o $@
 
 clean:
 	rm -rf $(SRCS)

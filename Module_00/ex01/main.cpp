@@ -5,6 +5,9 @@ int main() {
     std::string command;
 
     while (true) {
+        
+        if (std::cin.eof())
+			break ;
         std::cout << "Enter a command (ADD, SEARCH, EXIT): ";
         if (!std::getline(std::cin, command) || command == "EXIT")
             break;
