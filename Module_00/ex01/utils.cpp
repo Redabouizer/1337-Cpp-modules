@@ -41,7 +41,7 @@ void getPhone(std::string *str) {
             break;
         }
 
-        std::cout << "Enter a valid number: ";
+        std::cout << "Invalid number, ";
     }
 }
 
@@ -62,12 +62,16 @@ bool isPhone(std::string str) {
     return true;
 }
 
-bool isPrint(std::string str) {
+bool isPrintAlpha(std::string str) {
+    int c = 0;
     for (size_t i = 0; i < str.length(); i++) {
-        if (!std::isprint(str[i])) {
+        if(std::isalpha(str[i]))
+            c++;
+        if (!std::isprint(str[i])) 
             return false;
-        }
-    }
+    } 
+    if (c == 0)
+        return false;
     return true;
 }
 

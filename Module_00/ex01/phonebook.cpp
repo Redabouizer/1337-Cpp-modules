@@ -58,14 +58,13 @@ void Phonebook::add()
 
     while (!std::cin.eof() && i < 5)
     {
-        std::cout << prompts[i];
-
         if (i == 3)
         {
             getPhone(&str[i]); 
             i++;
             continue;
         }
+        std::cout << prompts[i];
 
         while (true)
         {
@@ -80,13 +79,7 @@ void Phonebook::add()
                 continue;
             }
 
-            if (i == 3 && !isPhone(str[i]))
-            {
-                std::cout << "Invalid phone number. Retry: ";
-                continue;
-            }
-
-            if (i != 3 && !isPrint(str[i]))
+            if (i != 3 && !isPrintAlpha(str[i]))
             {
                 std::cout << "Invalid input. Retry: ";
                 continue;

@@ -6,7 +6,7 @@
 
 bool		isPhone(std::string str);
 bool		isNumSign(std::string str);
-bool        isPrint(std::string str);
+bool		isPrintAlpha(std::string str);
 long        toLong(std::string str);
 std::string fmt10(std::string word);
 void        getPhone(std::string *str);
