@@ -22,7 +22,7 @@ void	Harl::error() {
 
 void	Harl::complain(std::string level)
 {
-	std::string		arrayLevel[4] = {"debug", "info", "warning", "error"};
+	std::string		arrayLevel[4] = {"DEBUG", "INFO", "WARNING", "ERROR"};
 	int		i = 0;
 
 	while (i < 4) {

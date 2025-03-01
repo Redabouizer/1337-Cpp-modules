@@ -4,6 +4,12 @@
 
 void replaceInFile(const std::string &filename, const std::string &search, const std::string &replace)
 {
+    if (search.empty())
+    {
+        std::cerr << "Error: search string cannot be empty." << std::endl;
+        return;
+    }
+
     std::ifstream input(filename.c_str());
     if (!input)
     {
@@ -13,7 +19,7 @@ void replaceInFile(const std::string &filename, const std::string &search, const
 
     std::string outFile = filename + ".replace";
     std::ofstream output(outFile.c_str());
-    
+
     if (!output)
     {
         std::cerr << "Error: cannot create file '" << outFile << "'." << std::endl;
@@ -26,10 +32,11 @@ void replaceInFile(const std::string &filename, const std::string &search, const
         size_t pos = 0;
         while ((pos = line.find(search, pos)) != std::string::npos)
         {
-            line = line.substr(0, pos) + replace + line.substr(pos + search.length());
+            line.erase(pos, search.length());
+            line.insert(pos, replace);
             pos += replace.length();
         }
-        output << line << std::endl;
+        output << line << "\n";
     }
 }
 
@@ -38,6 +45,15 @@ int main(int ac, char **av) {
         std::cerr << "Usage: ./replace filename string1 string2" << std::endl;
         return 1;
     }
-    replaceInFile(av[1], av[2], av[3]);
+
+    std::string search = av[2];
+    std::string replace = av[3];
+
+    if (search.empty()) {
+        std::cerr << "Error: search string cannot be empty." << std::endl;
+        return 1;
+    }
+
+    replaceInFile(av[1], search, replace);
     return 0;
 }
