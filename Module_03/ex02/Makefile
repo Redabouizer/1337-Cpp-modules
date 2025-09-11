@@ -1,25 +1,26 @@
-NAME = FragTrap
+NAME = fragtrap
 
-FILES = main.cpp ClapTrap.cpp ScavTrap.cpp FragTrap.cpp \
+SRCS = main.cpp ClapTrap.cpp FragTrap.cpp
+OBJS = $(SRCS:.cpp=.o)
+HEADER = ClapTrap.hpp FragTrap.hpp
 
-SRCS = $(FILES:.cpp=.o)
-
-CC = c++ 
-
-CPPFLAGS = -Wall -Wextra -Werror -std=c++98
+CC = c++
+CFLAGS = -Wall -Wextra -Werror -std=c++98
 
 all: $(NAME)
 
-$(NAME): $(SRCS)
-		@$(CC) $(CPPFLAGS) $^ -o $@
+.cpp.o:
+	$(CC) $(CFLAGS) -c $< -o $(<:.cpp=.o)
 
-%.o: %.cpp ClapTrap.hpp ScavTrap.hpp FragTrap.hpp
-		@$(CC) $(CPPFLAGS) -c $< -o $@
+$(NAME): $(OBJS) $(HEADER)
+	$(CC) $(OBJS) $(CFLAGS) -o $(NAME)
 
 clean:
-		rm -rf $(SRCS)
+	@$(RM)  $(OBJS)
 
 fclean: clean
-		rm -rf $(NAME)
+	@$(RM) $(NAME)
 
 re: fclean all
+
+.PHONY: all clean fclean re

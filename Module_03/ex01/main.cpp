@@ -1,21 +1,11 @@
-#include "ClapTrap.hpp"
 #include "ScavTrap.hpp"
 
-int     main()
-{
-	ClapTrap reda("reda");
-	ScavTrap spirit("Spirit");
-
-	std::cout << std::endl;
-
-	reda.attack("Spirit"); // working with ClapTrap's attack here!
-	spirit.takeDamage(5);
-	spirit.guardGate();
-	spirit.attack("reda"); // working with ScavTrap's attack here!
-	reda.takeDamage(20);
-	reda.takeDamage(20);
-
-	std::cout << std::endl;
-
-	return 0;
+int main() {
+    ScavTrap s("Serena");
+    s.attack("an intruder");
+    s.guardGate();
+    s.takeDamage(40);
+    s.beRepaired(10);
+    for (int i = 0; i < 55; ++i) s.attack("dummy");
+    return 0;
 }

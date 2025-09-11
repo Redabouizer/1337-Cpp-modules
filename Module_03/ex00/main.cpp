@@ -1,24 +1,16 @@
 #include "ClapTrap.hpp"
 
-int     main()
-{
-	ClapTrap A("reda");
-	ClapTrap B("Spirit");
+int main() {
+    ClapTrap a("Alpha");
+    ClapTrap b("Beta");
 
-	std::cout << std::endl;
+    a.attack("Beta");
+    b.takeDamage(0); // attackDamage is 0 by default
+    b.beRepaired(5);
 
-	A.attack("Spirit");
-	B.takeDamage(5);
-	B.beRepaired(4);
+    for (int i = 0; i < 11; ++i)
+        a.attack("some target");
 
-	std::cout << std::endl;
-
-	B.attack("reda");
-	A.takeDamage(10);
-	A.takeDamage(9);
-	A.attack("Spirit");
-
-	std::cout << std::endl;
-
-	return 0;
+    a.beRepaired(3);
+    return 0;
 }

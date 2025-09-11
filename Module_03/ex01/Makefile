@@ -1,19 +1,8 @@
-# **************************************************************************** #
-#                                                                              #
-#                                                         :::      ::::::::    #
-#    Makefile                                           :+:      :+:    :+:    #
-#                                                     +:+ +:+         +:+      #
-#    By: shovsepy <marvin@42.fr>                    +#+  +:+       +#+         #
-#                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2022/01/25 13:40:05 by shovsepy          #+#    #+#              #
-#    Updated: 2022/01/25 13:43:44 by shovsepy         ###   ########.fr        #
-#                                                                              #
-# **************************************************************************** #
-
 NAME = scavtrap
 
 SRCS = main.cpp ClapTrap.cpp ScavTrap.cpp
 OBJS = $(SRCS:.cpp=.o)
+HEADER = ClapTrap.hpp ScavTrap.hpp
 
 CC = c++
 CFLAGS = -Wall -Wextra -Werror -std=c++98
@@ -23,7 +12,7 @@ all: $(NAME)
 .cpp.o:
 	$(CC) $(CFLAGS) -c $< -o $(<:.cpp=.o)
 
-$(NAME): $(OBJS)
+$(NAME): $(OBJS) $(HEADER)
 	$(CC) $(OBJS) $(CFLAGS) -o $(NAME)
 
 clean:
