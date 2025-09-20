@@ -2,11 +2,15 @@
 
 int main()
 {
-	Zombie *zem = NULL;
-
-	zem = zem->newZombie("Heap-Zombie");
-	if (!zem)
-		return 1;
-	zem->randomChump("Stack-Zombie");
-    delete zem;
+	// Create a zombie on the heap
+	Zombie* heapZombie = newZombie("Heap-Zombie");
+	heapZombie->announce();
+	
+	// Create a zombie on the stack  
+	randomChump("Stack-Zombie");
+	
+	// Clean up heap zombie
+	delete heapZombie;
+	
+	return 0;
 }

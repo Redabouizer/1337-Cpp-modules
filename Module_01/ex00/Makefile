@@ -1,25 +1,25 @@
 NAME = zombie
 
-FILES = main.cpp Zombie.cpp newZombie.cpp randomChump.cpp \
+CXX = c++
+CXXFLAGS = -Wall -Wextra -Werror -std=c++98
 
-SRCS = $(FILES:.cpp=.o)
-
-CC = c++ 
-
-CPPFLAGS = -Wall -Wextra -Werror -std=c++98
+SOURCES = main.cpp Zombie.cpp newZombie.cpp randomChump.cpp
+OBJECTS = $(SOURCES:.cpp=.o)
 
 all: $(NAME)
 
-$(NAME): $(SRCS)
-	@$(CC) $(CPPFLAGS) $^ -o $@
+$(NAME): $(OBJECTS)
+	$(CXX) $(CXXFLAGS) -o $(NAME) $(OBJECTS)
 
-%.o: %.c Zombie.hpp
-	@$(CC) $(CPPFLAGS) -c $< -o $@
+%.o: %.cpp
+	$(CXX) $(CXXFLAGS) -c $< -o $@
 
 clean:
-	rm -rf $(SRCS)
+	rm -f $(OBJECTS)
 
 fclean: clean
-	rm -rf $(NAME)
+	rm -f $(NAME)
 
 re: fclean all
+
+.PHONY: all clean fclean re

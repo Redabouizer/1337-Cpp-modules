@@ -1,15 +1,7 @@
 #include "Zombie.hpp"
 
-Zombie* Zombie::newZombie( std::string name )
+Zombie* newZombie(std::string name)
 {
-	Zombie *z;
-    
-    z = (Zombie *) new (std::nothrow) Zombie ( name );
-	if (!z)
-	{
-		std::cerr << "Memory allocation failed" << std::endl;
-		return NULL;
-	}
-    z->announce();
-	return (z);
+	Zombie *zombie = new Zombie(name);
+	return zombie;
 }

@@ -1,21 +1,31 @@
 #include "Zombie.hpp"
 
-Zombie::Zombie()
+Zombie::Zombie(void)
 {
-	
+	this->name = "Default Zombie";
 }
 
-Zombie::Zombie( std::string Name )
+Zombie::Zombie(std::string name)
 {
-	this->name = Name;
+	this->name = name;
 }
 
-Zombie::~Zombie()
+Zombie::~Zombie(void)
 {
-	std::cout << "Destructure called for : " << this->name << std::endl;
+	std::cout << this->name << ": destroyed" << std::endl;
 }
 
-void	Zombie::announce(void)
+void Zombie::announce(void)
 {
-	std::cout << this->name << ":" << " BraiiiiiiinnnzzzZ..." << std::endl;
+	std::cout << this->name << ": BraiiiiiiinnnzzzZ..." << std::endl;
+}
+
+void Zombie::setName(std::string name)
+{
+	this->name = name;
+}
+
+std::string Zombie::getName(void) const
+{
+	return this->name;
 }
