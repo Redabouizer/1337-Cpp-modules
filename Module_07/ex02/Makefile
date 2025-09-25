@@ -11,7 +11,7 @@ all: $(NAME)
 $(NAME): $(OBJECTS)
 	$(CXX) $(CXXFLAGS) -o $(NAME) $(OBJECTS)
 
-%.o: %.cpp
+%.o: %.cpp Array.hpp
 	$(CXX) $(CXXFLAGS) -c $< -o $@
 
 clean:
