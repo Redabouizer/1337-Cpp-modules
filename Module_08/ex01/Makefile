@@ -1,9 +1,10 @@
-NAME = identifyy
+NAME = span
 
 CXX = c++
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98
 
-SOURCES = main.cpp Base.cpp A.cpp B.cpp C.cpp functions.cpp
+SRCDIR = .
+SOURCES = main.cpp Span.cpp
 OBJECTS = $(SOURCES:.cpp=.o)
 
 all: $(NAME)
