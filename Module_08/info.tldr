@@ -1,0 +1,4320 @@
+{
+	"tldrawFileFormatVersion": 1,
+	"schema": {
+		"schemaVersion": 2,
+		"sequences": {
+			"com.tldraw.store": 5,
+			"com.tldraw.asset": 1,
+			"com.tldraw.camera": 1,
+			"com.tldraw.document": 2,
+			"com.tldraw.instance": 25,
+			"com.tldraw.instance_page_state": 5,
+			"com.tldraw.page": 1,
+			"com.tldraw.instance_presence": 6,
+			"com.tldraw.pointer": 1,
+			"com.tldraw.shape": 4,
+			"com.tldraw.asset.bookmark": 2,
+			"com.tldraw.asset.image": 5,
+			"com.tldraw.asset.video": 5,
+			"com.tldraw.shape.group": 0,
+			"com.tldraw.shape.text": 3,
+			"com.tldraw.shape.bookmark": 2,
+			"com.tldraw.shape.draw": 2,
+			"com.tldraw.shape.geo": 10,
+			"com.tldraw.shape.note": 9,
+			"com.tldraw.shape.line": 5,
+			"com.tldraw.shape.frame": 1,
+			"com.tldraw.shape.arrow": 7,
+			"com.tldraw.shape.highlight": 1,
+			"com.tldraw.shape.embed": 4,
+			"com.tldraw.shape.image": 5,
+			"com.tldraw.shape.video": 4,
+			"com.tldraw.binding.arrow": 1
+		}
+	},
+	"records": [
+		{
+			"meta": {},
+			"id": "binding:T7TS1bD7D96YpsEtuP3yF",
+			"type": "arrow",
+			"fromId": "shape:aePpAdbxglHxWkrhatAuY",
+			"toId": "shape:ALHE72dPYWqvkzFWFfYW5",
+			"props": {
+				"isPrecise": true,
+				"isExact": false,
+				"normalizedAnchor": {
+					"x": 0.5,
+					"y": 0.5
+				},
+				"snap": "center",
+				"terminal": "start"
+			},
+			"typeName": "binding"
+		},
+		{
+			"id": "pointer:pointer",
+			"typeName": "pointer",
+			"x": 2740.82145348347,
+			"y": 2485.7927752596006,
+			"lastActivityTimestamp": 1758996834120,
+			"meta": {}
+		},
+		{
+			"x": -6929.536191427531,
+			"y": 1702.666213973079,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:78_je0cI7I65EkVGLfhE5",
+			"type": "arrow",
+			"props": {
+				"kind": "arc",
+				"elbowMidPoint": 0.5,
+				"dash": "draw",
+				"size": "l",
+				"fill": "none",
+				"color": "black",
+				"labelColor": "black",
+				"bend": 0,
+				"start": {
+					"x": 0,
+					"y": 0
+				},
+				"end": {
+					"x": -894.970725611025,
+					"y": 252.87868534021982
+				},
+				"arrowheadStart": "none",
+				"arrowheadEnd": "arrow",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph"
+						}
+					]
+				},
+				"labelPosition": 0.5,
+				"font": "draw",
+				"scale": 1
+			},
+			"parentId": "page:page",
+			"index": "a4pCsTJV",
+			"typeName": "shape"
+		},
+		{
+			"x": 2732.32792275227,
+			"y": 407.9115557164371,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:oinwrvbNa2FcVOUhwuBq4",
+			"type": "geo",
+			"props": {
+				"w": 927.3370889483466,
+				"h": 690.2357777320294,
+				"geo": "rectangle",
+				"dash": "draw",
+				"growY": 0,
+				"url": "",
+				"scale": 1,
+				"color": "black",
+				"labelColor": "black",
+				"fill": "none",
+				"size": "l",
+				"font": "draw",
+				"align": "middle",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph"
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "aItDORDV",
+			"typeName": "shape"
+		},
+		{
+			"x": -1703.6456159072952,
+			"y": 1973.6415173468147,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:FlV6CZuxMw0yvZsVVFH3o",
+			"type": "geo",
+			"props": {
+				"w": 334.9947814941406,
+				"h": 136.94540895061732,
+				"geo": "rectangle",
+				"dash": "draw",
+				"growY": 0,
+				"url": "",
+				"scale": 1,
+				"color": "black",
+				"labelColor": "black",
+				"fill": "none",
+				"size": "l",
+				"font": "draw",
+				"align": "middle",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"marks": [
+										{
+											"type": "link",
+											"attrs": {
+												"href": "https://www.geeksforgeeks.org/cpp/cpp-unordered_multiset/",
+												"target": "_blank",
+												"rel": "noopener",
+												"class": null
+											}
+										},
+										{
+											"type": "bold"
+										}
+									],
+									"text": "Unordered Multiset"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "a2uzzzzJyFWYst",
+			"typeName": "shape"
+		},
+		{
+			"x": -462.3989972080516,
+			"y": -1227.6971384833498,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:0UFGX5M8lq_Tu6m_EICcY",
+			"type": "geo",
+			"props": {
+				"w": 1201.8443167028463,
+				"h": 849.9109514646333,
+				"geo": "rectangle",
+				"dash": "draw",
+				"growY": 0,
+				"url": "",
+				"scale": 1,
+				"color": "black",
+				"labelColor": "black",
+				"fill": "none",
+				"size": "l",
+				"font": "draw",
+				"align": "start",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph"
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "aLvrcHcV",
+			"typeName": "shape"
+		},
+		{
+			"x": 148.66415462624423,
+			"y": 104.69769563243904,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:SWL9nuOL1oRaI-LqLgUZE",
+			"type": "arrow",
+			"props": {
+				"kind": "arc",
+				"elbowMidPoint": 0.5,
+				"dash": "draw",
+				"size": "m",
+				"fill": "none",
+				"color": "black",
+				"labelColor": "black",
+				"bend": 0,
+				"start": {
+					"x": -563.4996277559753,
+					"y": -443.28874672061215
+				},
+				"end": {
+					"x": -4096.774176744168,
+					"y": 164.76316159345424
+				},
+				"arrowheadStart": "none",
+				"arrowheadEnd": "arrow",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph"
+						}
+					]
+				},
+				"labelPosition": 0.5,
+				"font": "draw",
+				"scale": 1
+			},
+			"parentId": "page:page",
+			"index": "aLwyzYfcG",
+			"typeName": "shape"
+		},
+		{
+			"x": -2834.459053060194,
+			"y": 1973.322847174032,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:0XCHvVtH0zBRlITqolVz0",
+			"type": "geo",
+			"props": {
+				"w": 334.9947814941406,
+				"h": 136.94540895061732,
+				"geo": "rectangle",
+				"dash": "draw",
+				"growY": 0,
+				"url": "",
+				"scale": 1,
+				"color": "black",
+				"labelColor": "black",
+				"fill": "none",
+				"size": "l",
+				"font": "draw",
+				"align": "middle",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"marks": [
+										{
+											"type": "link",
+											"attrs": {
+												"href": "https://www.geeksforgeeks.org/cpp/multimap-associative-containers-the-c-standard-template-library-stl/",
+												"target": "_blank",
+												"rel": "noopener",
+												"class": null
+											}
+										},
+										{
+											"type": "bold"
+										}
+									],
+									"text": "Multimap"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "a2uzzzzlx1mVxV",
+			"typeName": "shape"
+		},
+		{
+			"meta": {},
+			"id": "binding:2sX0GZY_zTFD-RdsG7rE8",
+			"type": "arrow",
+			"fromId": "shape:pkt5YS-XMJb47gOwe13MN",
+			"toId": "shape:HAahXOvUeEeV-fK8WrNW5",
+			"props": {
+				"isPrecise": true,
+				"isExact": false,
+				"normalizedAnchor": {
+					"x": 0.5,
+					"y": 0.49999999999999917
+				},
+				"snap": "center",
+				"terminal": "end"
+			},
+			"typeName": "binding"
+		},
+		{
+			"x": -5570.55379644335,
+			"y": 1969.5058455760336,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:pDmopD9frS9RwfMqzhYaU",
+			"type": "geo",
+			"props": {
+				"w": 334.9947814941406,
+				"h": 136.94540895061732,
+				"geo": "rectangle",
+				"dash": "draw",
+				"growY": 0,
+				"url": "",
+				"scale": 1,
+				"color": "black",
+				"labelColor": "black",
+				"fill": "none",
+				"size": "l",
+				"font": "draw",
+				"align": "middle",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"marks": [
+										{
+											"type": "link",
+											"attrs": {
+												"href": "https://www.geeksforgeeks.org/cpp/stack-in-cpp-stl/",
+												"target": "_blank",
+												"rel": "noopener",
+												"class": null
+											}
+										},
+										{
+											"type": "bold"
+										}
+									],
+									"text": "Stack"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "a2uzzzsLqgH",
+			"typeName": "shape"
+		},
+		{
+			"meta": {},
+			"id": "binding:0mo4jc8czXNaOsFuPNMb4",
+			"type": "arrow",
+			"fromId": "shape:86jVahYLGTJEmdl_nSpB_",
+			"toId": "shape:SyLEvLqfVtFLzX-CN8iOf",
+			"props": {
+				"isPrecise": true,
+				"isExact": false,
+				"normalizedAnchor": {
+					"x": 0.5,
+					"y": 0.5
+				},
+				"snap": "center",
+				"terminal": "start"
+			},
+			"typeName": "binding"
+		},
+		{
+			"meta": {},
+			"id": "binding:EJ8Qmx-5rIbHZ887ECxqy",
+			"type": "arrow",
+			"fromId": "shape:DVLcqQ-B5IZZfbj3eCKfB",
+			"toId": "shape:ne3A4NCAfhP2usDf5WLyt",
+			"props": {
+				"isPrecise": true,
+				"isExact": false,
+				"normalizedAnchor": {
+					"x": 0.5,
+					"y": 0.5
+				},
+				"snap": "center",
+				"terminal": "end"
+			},
+			"typeName": "binding"
+		},
+		{
+			"meta": {},
+			"id": "binding:kEQnQNaVFXQFulL1ArGAo",
+			"type": "arrow",
+			"fromId": "shape:IJEYA59JX_8ATsGYAFY3l",
+			"toId": "shape:ALHE72dPYWqvkzFWFfYW5",
+			"props": {
+				"isPrecise": true,
+				"isExact": false,
+				"normalizedAnchor": {
+					"x": 0.5,
+					"y": 0.5
+				},
+				"snap": "center",
+				"terminal": "start"
+			},
+			"typeName": "binding"
+		},
+		{
+			"x": -8090.303783096755,
+			"y": 1962.9344451897546,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:dhboF_ot8PBpCYDGAokmz",
+			"type": "geo",
+			"props": {
+				"w": 334.9947814941406,
+				"h": 136.94540895061732,
+				"geo": "rectangle",
+				"dash": "draw",
+				"growY": 0,
+				"url": "",
+				"scale": 1,
+				"color": "black",
+				"labelColor": "black",
+				"fill": "none",
+				"size": "l",
+				"font": "draw",
+				"align": "middle",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"marks": [
+										{
+											"type": "link",
+											"attrs": {
+												"href": "https://www.geeksforgeeks.org/cpp/vector-in-cpp-stl/",
+												"target": "_blank",
+												"rel": "noopener",
+												"class": null
+											}
+										},
+										{
+											"type": "bold"
+										}
+									],
+									"text": "Vector"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "a2us9tiXd",
+			"typeName": "shape"
+		},
+		{
+			"x": -1430.2991580283758,
+			"y": 1600.0209250946214,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:5Mfbn1b-GdpuE6lKMzRVB",
+			"type": "geo",
+			"props": {
+				"w": 334.9947814941406,
+				"h": 136.94540895061732,
+				"geo": "rectangle",
+				"dash": "draw",
+				"growY": 0,
+				"url": "",
+				"scale": 1,
+				"color": "black",
+				"labelColor": "black",
+				"fill": "solid",
+				"size": "l",
+				"font": "draw",
+				"align": "middle",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "Sequence Containers"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "a2uo47xIcV",
+			"typeName": "shape"
+		},
+		{
+			"meta": {},
+			"id": "binding:gJhHG0IjXCf1b4zT-yNmS",
+			"type": "arrow",
+			"fromId": "shape:yvwHZiTWIGYazfebhvBE7",
+			"toId": "shape:Mm5Ew4NM9kqX9SSJS9qs-",
+			"props": {
+				"isPrecise": true,
+				"isExact": false,
+				"normalizedAnchor": {
+					"x": 0.5,
+					"y": 0.49999999999999917
+				},
+				"snap": "center",
+				"terminal": "end"
+			},
+			"typeName": "binding"
+		},
+		{
+			"meta": {},
+			"id": "binding:ZOqExnHxBB0oGShDpKM-j",
+			"type": "arrow",
+			"fromId": "shape:0dSqO50UElyVpni_G1oWp",
+			"toId": "shape:uWLrErH_cLFXl0019S3zB",
+			"props": {
+				"isPrecise": true,
+				"isExact": false,
+				"normalizedAnchor": {
+					"x": 0.5,
+					"y": 0.5000000000000008
+				},
+				"snap": "center",
+				"terminal": "end"
+			},
+			"typeName": "binding"
+		},
+		{
+			"meta": {},
+			"id": "binding:68nEs7fgpMff1Im-OYVzZ",
+			"type": "arrow",
+			"fromId": "shape:yvwHZiTWIGYazfebhvBE7",
+			"toId": "shape:XNPUP2pqj0LZZw9jT3zdS",
+			"props": {
+				"isPrecise": false,
+				"isExact": false,
+				"normalizedAnchor": {
+					"x": 0.5,
+					"y": 0.5
+				},
+				"snap": "center",
+				"terminal": "start"
+			},
+			"typeName": "binding"
+		},
+		{
+			"meta": {},
+			"id": "binding:UNsKmvU48p-SxLnAZdJcz",
+			"type": "arrow",
+			"fromId": "shape:x6mWwdgH5TZeu0wzlZ87S",
+			"toId": "shape:5Mfbn1b-GdpuE6lKMzRVB",
+			"props": {
+				"isPrecise": true,
+				"isExact": false,
+				"normalizedAnchor": {
+					"x": 0.5,
+					"y": 0.5
+				},
+				"snap": "center",
+				"terminal": "start"
+			},
+			"typeName": "binding"
+		},
+		{
+			"x": 1936.2561102325167,
+			"y": 2538.514254986363,
+			"z": 0.13199718746889355,
+			"meta": {},
+			"id": "camera:page:page",
+			"typeName": "camera"
+		},
+		{
+			"meta": {},
+			"id": "binding:7RaQD_QdpcU0FXc1FcD50",
+			"type": "arrow",
+			"fromId": "shape:YXuCga_Ifd5nZfn6WwNyI",
+			"toId": "shape:emTXLoRjbCtHHUkIN9zbR",
+			"props": {
+				"isPrecise": true,
+				"isExact": false,
+				"normalizedAnchor": {
+					"x": 0.5,
+					"y": 0.5
+				},
+				"snap": "center",
+				"terminal": "start"
+			},
+			"typeName": "binding"
+		},
+		{
+			"meta": {},
+			"id": "binding:qqluSvZ69cygb9ndCf6od",
+			"type": "arrow",
+			"fromId": "shape:Avlmc_-o5YE0x_xmN6bkQ",
+			"toId": "shape:5Mfbn1b-GdpuE6lKMzRVB",
+			"props": {
+				"isPrecise": true,
+				"isExact": false,
+				"normalizedAnchor": {
+					"x": 0.5,
+					"y": 0.5
+				},
+				"snap": "center",
+				"terminal": "start"
+			},
+			"typeName": "binding"
+		},
+		{
+			"x": -4103.426704845413,
+			"y": 701.9932304015974,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:PFd1ybY5IhnEthDVKrjU5",
+			"type": "arrow",
+			"props": {
+				"kind": "arc",
+				"elbowMidPoint": 0.5,
+				"dash": "draw",
+				"size": "l",
+				"fill": "none",
+				"color": "black",
+				"labelColor": "black",
+				"bend": 0,
+				"start": {
+					"x": 0,
+					"y": 0
+				},
+				"end": {
+					"x": 2700.5071894149405,
+					"y": 891.4481998940755
+				},
+				"arrowheadStart": "none",
+				"arrowheadEnd": "arrow",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph"
+						}
+					]
+				},
+				"labelPosition": 0.5,
+				"font": "draw",
+				"scale": 1
+			},
+			"parentId": "page:page",
+			"index": "aFpld9iV",
+			"typeName": "shape"
+		},
+		{
+			"x": -1257.1491551038364,
+			"y": 1665.2895279933211,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:pkt5YS-XMJb47gOwe13MN",
+			"type": "arrow",
+			"props": {
+				"kind": "arc",
+				"elbowMidPoint": 0.5,
+				"dash": "draw",
+				"size": "l",
+				"fill": "none",
+				"color": "black",
+				"labelColor": "black",
+				"bend": 0,
+				"start": {
+					"x": 0,
+					"y": 0
+				},
+				"end": {
+					"x": 109.49991340323459,
+					"y": 305.5877954618338
+				},
+				"arrowheadStart": "none",
+				"arrowheadEnd": "arrow",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph"
+						}
+					]
+				},
+				"labelPosition": 0.5,
+				"font": "draw",
+				"scale": 1
+			},
+			"parentId": "page:page",
+			"index": "a2uzzzzQhCZjUl",
+			"typeName": "shape"
+		},
+		{
+			"meta": {},
+			"id": "binding:lR7CWSWWGEqNoAwzq5J5I",
+			"type": "arrow",
+			"fromId": "shape:SWL9nuOL1oRaI-LqLgUZE",
+			"toId": "shape:emTXLoRjbCtHHUkIN9zbR",
+			"props": {
+				"isPrecise": true,
+				"isExact": false,
+				"normalizedAnchor": {
+					"x": 0.5,
+					"y": 0.5
+				},
+				"snap": "center",
+				"terminal": "end"
+			},
+			"typeName": "binding"
+		},
+		{
+			"x": -5148.721082788296,
+			"y": 1972.959415246507,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:OKUMwgk1zGreNIKk8AzUj",
+			"type": "geo",
+			"props": {
+				"w": 334.9947814941406,
+				"h": 136.94540895061732,
+				"geo": "rectangle",
+				"dash": "draw",
+				"growY": 0,
+				"url": "",
+				"scale": 1,
+				"color": "black",
+				"labelColor": "black",
+				"fill": "none",
+				"size": "l",
+				"font": "draw",
+				"align": "middle",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"marks": [
+										{
+											"type": "link",
+											"attrs": {
+												"href": "https://www.geeksforgeeks.org/cpp/queue-cpp-stl/",
+												"target": "_blank",
+												"rel": "noopener",
+												"class": null
+											}
+										},
+										{
+											"type": "bold"
+										}
+									],
+									"text": "Queue"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "a2uzzzzCQHev",
+			"typeName": "shape"
+		},
+		{
+			"x": -1235.4109467109035,
+			"y": 1654.245853703902,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:Avlmc_-o5YE0x_xmN6bkQ",
+			"type": "arrow",
+			"props": {
+				"kind": "arc",
+				"elbowMidPoint": 0.5,
+				"dash": "draw",
+				"size": "l",
+				"fill": "none",
+				"color": "black",
+				"labelColor": "black",
+				"bend": 0,
+				"start": {
+					"x": 0,
+					"y": 0
+				},
+				"end": {
+					"x": -46.66344285102696,
+					"y": 287.9705456118219
+				},
+				"arrowheadStart": "none",
+				"arrowheadEnd": "arrow",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph"
+						}
+					]
+				},
+				"labelPosition": 0.5,
+				"font": "draw",
+				"scale": 1
+			},
+			"parentId": "page:page",
+			"index": "a2uzzzzLB8MixV",
+			"typeName": "shape"
+		},
+		{
+			"x": -4088.866908059861,
+			"y": 672.8736368304935,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:YXuCga_Ifd5nZfn6WwNyI",
+			"type": "arrow",
+			"props": {
+				"kind": "arc",
+				"elbowMidPoint": 0.5,
+				"dash": "draw",
+				"size": "l",
+				"fill": "none",
+				"color": "black",
+				"labelColor": "black",
+				"bend": 0,
+				"start": {
+					"x": 0,
+					"y": 0
+				},
+				"end": {
+					"x": -721.0530531445529,
+					"y": 1029.766749234106
+				},
+				"arrowheadStart": "none",
+				"arrowheadEnd": "arrow",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph"
+						}
+					]
+				},
+				"labelPosition": 0.5,
+				"font": "draw",
+				"scale": 1
+			},
+			"parentId": "page:page",
+			"index": "aDWyV0DV",
+			"typeName": "shape"
+		},
+		{
+			"meta": {},
+			"id": "binding:WSXDAvQAAHQAF2Hmygrd3",
+			"type": "arrow",
+			"fromId": "shape:vA4onShMRGkDP45hNUM9t",
+			"toId": "shape:0UFGX5M8lq_Tu6m_EICcY",
+			"props": {
+				"isPrecise": true,
+				"isExact": false,
+				"normalizedAnchor": {
+					"x": 0.5,
+					"y": 0.5000000000000001
+				},
+				"snap": "center",
+				"terminal": "start"
+			},
+			"typeName": "binding"
+		},
+		{
+			"x": -4272.148762370394,
+			"y": 431.46679026903746,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:oOb3HpScVTu2hcTyyN-dR",
+			"type": "geo",
+			"props": {
+				"w": 334.9947814941406,
+				"h": 136.94540895061732,
+				"geo": "rectangle",
+				"dash": "draw",
+				"growY": 0,
+				"url": "",
+				"scale": 1,
+				"color": "black",
+				"labelColor": "black",
+				"fill": "semi",
+				"size": "l",
+				"font": "draw",
+				"align": "middle",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "heading",
+							"attrs": {
+								"dir": "auto",
+								"level": 2
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "Containers"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "a2nY30KV",
+			"typeName": "shape"
+		},
+		{
+			"meta": {},
+			"id": "binding:3lD6401C6bfSLJoiBNEI8",
+			"type": "arrow",
+			"fromId": "shape:Ahu-R65KQyXGuriIFt8oA",
+			"toId": "shape:XNPUP2pqj0LZZw9jT3zdS",
+			"props": {
+				"isPrecise": false,
+				"isExact": false,
+				"normalizedAnchor": {
+					"x": 0.5,
+					"y": 0.5
+				},
+				"snap": "center",
+				"terminal": "start"
+			},
+			"typeName": "binding"
+		},
+		{
+			"meta": {},
+			"id": "binding:_GMlMXv6GNzxCUIFAFMeB",
+			"type": "arrow",
+			"fromId": "shape:Ahu-R65KQyXGuriIFt8oA",
+			"toId": "shape:tA3G0iD7wam3PhhD67BOo",
+			"props": {
+				"isPrecise": true,
+				"isExact": false,
+				"normalizedAnchor": {
+					"x": 0.5,
+					"y": 0.49999999999999917
+				},
+				"snap": "center",
+				"terminal": "end"
+			},
+			"typeName": "binding"
+		},
+		{
+			"meta": {},
+			"id": "binding:xKi4OU-Mra0hpBVlXowyl",
+			"type": "arrow",
+			"fromId": "shape:GoRAFJF-FC31bnhoaM4DA",
+			"toId": "shape:emTXLoRjbCtHHUkIN9zbR",
+			"props": {
+				"isPrecise": false,
+				"isExact": false,
+				"normalizedAnchor": {
+					"x": 0.5,
+					"y": 0.5
+				},
+				"snap": "center",
+				"terminal": "start"
+			},
+			"typeName": "binding"
+		},
+		{
+			"editingShapeId": null,
+			"croppingShapeId": null,
+			"selectedShapeIds": [
+				"shape:NYptLgHisd_DFEQSI8-Um"
+			],
+			"hoveredShapeId": null,
+			"erasingShapeIds": [],
+			"hintingShapeIds": [],
+			"focusedGroupId": null,
+			"meta": {},
+			"id": "instance_page_state:page:page",
+			"pageId": "page:page",
+			"typeName": "instance_page_state"
+		},
+		{
+			"x": -459.1017514656187,
+			"y": 355.18896960905886,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:ne3A4NCAfhP2usDf5WLyt",
+			"type": "geo",
+			"props": {
+				"w": 1175.2658605907768,
+				"h": 1401.7031658961164,
+				"geo": "rectangle",
+				"dash": "draw",
+				"growY": 0,
+				"url": "",
+				"scale": 1,
+				"color": "black",
+				"labelColor": "black",
+				"fill": "none",
+				"size": "l",
+				"font": "draw",
+				"align": "middle",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph"
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "aGA7iFMV",
+			"typeName": "shape"
+		},
+		{
+			"meta": {},
+			"id": "binding:BnvqrLQ5hRsm2D4rlkDc7",
+			"type": "arrow",
+			"fromId": "shape:PFd1ybY5IhnEthDVKrjU5",
+			"toId": "shape:5Mfbn1b-GdpuE6lKMzRVB",
+			"props": {
+				"isPrecise": true,
+				"isExact": false,
+				"normalizedAnchor": {
+					"x": 0.5,
+					"y": 0.49999999999999917
+				},
+				"snap": "center",
+				"terminal": "end"
+			},
+			"typeName": "binding"
+		},
+		{
+			"x": -1272.724430143346,
+			"y": 1975.8490025112262,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:HAahXOvUeEeV-fK8WrNW5",
+			"type": "geo",
+			"props": {
+				"w": 334.9947814941406,
+				"h": 136.94540895061732,
+				"geo": "rectangle",
+				"dash": "draw",
+				"growY": 0,
+				"url": "",
+				"scale": 1,
+				"color": "black",
+				"labelColor": "black",
+				"fill": "none",
+				"size": "l",
+				"font": "draw",
+				"align": "middle",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"marks": [
+										{
+											"type": "link",
+											"attrs": {
+												"href": "https://www.geeksforgeeks.org/cpp/cpp-unordered_multiset/",
+												"target": "_blank",
+												"rel": "noopener",
+												"class": null
+											}
+										},
+										{
+											"type": "bold"
+										}
+									],
+									"text": "Unordered Map"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "a2uzzzzNzqCJdb",
+			"typeName": "shape"
+		},
+		{
+			"x": -4641.938770343515,
+			"y": 619.1777907795066,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:0AbYKmWhhg2TLYDxvI-0w",
+			"type": "geo",
+			"props": {
+				"w": 1111.9913330078125,
+				"h": 290.7589073021195,
+				"geo": "rectangle",
+				"dash": "draw",
+				"growY": 0,
+				"url": "",
+				"scale": 1,
+				"color": "black",
+				"labelColor": "black",
+				"fill": "solid",
+				"size": "l",
+				"font": "draw",
+				"align": "middle",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "bulletList",
+							"content": [
+								{
+									"type": "listItem",
+									"content": [
+										{
+											"type": "paragraph",
+											"attrs": {
+												"dir": "auto"
+											},
+											"content": [
+												{
+													"type": "text",
+													"marks": [
+														{
+															"type": "link",
+															"attrs": {
+																"href": "https://www.geeksforgeeks.org/cpp/c-magicians-stl-algorithms/",
+																"target": "_blank",
+																"rel": "noopener",
+																"class": null
+															}
+														},
+														{
+															"type": "bold"
+														}
+													],
+													"text": "STL algorithms"
+												},
+												{
+													"type": "text",
+													"text": " offer a wide range of functions to perform common operations on data (mainly containers). These functions implement the most efficient version of the algorithm for tasks such as sorting, searching, modifying and manipulating data in containers, etc. All STL algorithms are defined inside the"
+												},
+												{
+													"type": "text",
+													"marks": [
+														{
+															"type": "bold"
+														}
+													],
+													"text": " <algorithm>"
+												},
+												{
+													"type": "text",
+													"text": " and "
+												},
+												{
+													"type": "text",
+													"marks": [
+														{
+															"type": "bold"
+														}
+													],
+													"text": "<numeric>"
+												},
+												{
+													"type": "text",
+													"text": " header file."
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "a2uzzzzyug1qQG",
+			"typeName": "shape"
+		},
+		{
+			"meta": {},
+			"id": "binding:7cIGq2t5PZNhtejF5coZ6",
+			"type": "arrow",
+			"fromId": "shape:PFd1ybY5IhnEthDVKrjU5",
+			"toId": "shape:emTXLoRjbCtHHUkIN9zbR",
+			"props": {
+				"isPrecise": true,
+				"isExact": false,
+				"normalizedAnchor": {
+					"x": 0.5,
+					"y": 0.5
+				},
+				"snap": "center",
+				"terminal": "start"
+			},
+			"typeName": "binding"
+		},
+		{
+			"x": -7615.771917047179,
+			"y": 1961.1455563444308,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:FjolVMgvYW-bF84nk2NVy",
+			"type": "geo",
+			"props": {
+				"w": 334.9947814941406,
+				"h": 136.94540895061732,
+				"geo": "rectangle",
+				"dash": "draw",
+				"growY": 0,
+				"url": "",
+				"scale": 1,
+				"color": "black",
+				"labelColor": "black",
+				"fill": "none",
+				"size": "l",
+				"font": "draw",
+				"align": "middle",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"marks": [
+										{
+											"type": "link",
+											"attrs": {
+												"href": "https://www.geeksforgeeks.org/cpp/deque-cpp-stl/",
+												"target": "_blank",
+												"rel": "noopener",
+												"class": null
+											}
+										},
+										{
+											"type": "bold"
+										}
+									],
+									"text": "Deque"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "a2uzguNrf",
+			"typeName": "shape"
+		},
+		{
+			"x": -3231.7613409853006,
+			"y": 1667.4219367798196,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:tZR1h08bs81lQiS-XAOm4",
+			"type": "arrow",
+			"props": {
+				"kind": "arc",
+				"elbowMidPoint": 0.5,
+				"dash": "draw",
+				"size": "l",
+				"fill": "none",
+				"color": "black",
+				"labelColor": "black",
+				"bend": 0,
+				"start": {
+					"x": 0,
+					"y": 0
+				},
+				"end": {
+					"x": -334.04741440121916,
+					"y": 287.97054561182176
+				},
+				"arrowheadStart": "none",
+				"arrowheadEnd": "arrow",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph"
+						}
+					]
+				},
+				"labelPosition": 0.5,
+				"font": "draw",
+				"scale": 1
+			},
+			"parentId": "page:page",
+			"index": "a2uzzztbzBfyf",
+			"typeName": "shape"
+		},
+		{
+			"x": -5150.742288874011,
+			"y": 1607.7502171000797,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:ALHE72dPYWqvkzFWFfYW5",
+			"type": "geo",
+			"props": {
+				"w": 334.9947814941406,
+				"h": 136.94540895061732,
+				"geo": "rectangle",
+				"dash": "draw",
+				"growY": 0,
+				"url": "",
+				"scale": 1,
+				"color": "black",
+				"labelColor": "black",
+				"fill": "solid",
+				"size": "l",
+				"font": "draw",
+				"align": "middle",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "Sequence Containers"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "a2uiJ0aZ",
+			"typeName": "shape"
+		},
+		{
+			"meta": {},
+			"id": "binding:DU_YkOvNsRnBG3zfk_2WL",
+			"type": "arrow",
+			"fromId": "shape:PclsRJfBaRxhU5u9Zetsn",
+			"toId": "shape:SyLEvLqfVtFLzX-CN8iOf",
+			"props": {
+				"isPrecise": true,
+				"isExact": false,
+				"normalizedAnchor": {
+					"x": 0.5,
+					"y": 0.5
+				},
+				"snap": "center",
+				"terminal": "start"
+			},
+			"typeName": "binding"
+		},
+		{
+			"meta": {},
+			"id": "binding:fVZJUdeX4PAQpW3dUQQe7",
+			"type": "arrow",
+			"fromId": "shape:Avlmc_-o5YE0x_xmN6bkQ",
+			"toId": "shape:FlV6CZuxMw0yvZsVVFH3o",
+			"props": {
+				"isPrecise": true,
+				"isExact": false,
+				"normalizedAnchor": {
+					"x": 0.5,
+					"y": 0.49999999999999917
+				},
+				"snap": "center",
+				"terminal": "end"
+			},
+			"typeName": "binding"
+		},
+		{
+			"x": -4088.866908059861,
+			"y": 723.8327656208303,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:CR2HEpKxi_a7njmb9henw",
+			"type": "arrow",
+			"props": {
+				"kind": "arc",
+				"elbowMidPoint": 0.5,
+				"dash": "draw",
+				"size": "l",
+				"fill": "none",
+				"color": "black",
+				"labelColor": "black",
+				"bend": 0,
+				"start": {
+					"x": 0,
+					"y": 0
+				},
+				"end": {
+					"x": 858.6885771470352,
+					"y": 1015.2072723667443
+				},
+				"arrowheadStart": "none",
+				"arrowheadEnd": "arrow",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph"
+						}
+					]
+				},
+				"labelPosition": 0.5,
+				"font": "draw",
+				"scale": 1
+			},
+			"parentId": "page:page",
+			"index": "aEXMsWWV",
+			"typeName": "shape"
+		},
+		{
+			"meta": {},
+			"id": "binding:uat6G7776knPJ_r_tTnXc",
+			"type": "arrow",
+			"fromId": "shape:tZR1h08bs81lQiS-XAOm4",
+			"toId": "shape:kRt0xFYEz6SQgAx8OCfo6",
+			"props": {
+				"isPrecise": true,
+				"isExact": false,
+				"normalizedAnchor": {
+					"x": 0.5,
+					"y": 0.49999999999999917
+				},
+				"snap": "center",
+				"terminal": "end"
+			},
+			"typeName": "binding"
+		},
+		{
+			"meta": {},
+			"id": "binding:keRS3uRFhO08Byjb7IJZ3",
+			"type": "arrow",
+			"fromId": "shape:86jVahYLGTJEmdl_nSpB_",
+			"toId": "shape:0XCHvVtH0zBRlITqolVz0",
+			"props": {
+				"isPrecise": true,
+				"isExact": false,
+				"normalizedAnchor": {
+					"x": 0.5,
+					"y": 0.5000000000000008
+				},
+				"snap": "center",
+				"terminal": "end"
+			},
+			"typeName": "binding"
+		},
+		{
+			"x": -2776.5739114265066,
+			"y": -2084.9256128580496,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:bZ6Ajvi2tFX0pA2eJ8p-x",
+			"type": "geo",
+			"props": {
+				"w": 1699.2119654352205,
+				"h": 344.5546107258301,
+				"geo": "rectangle",
+				"dash": "draw",
+				"growY": 0,
+				"url": "",
+				"scale": 1,
+				"color": "black",
+				"labelColor": "black",
+				"fill": "pattern",
+				"size": "xl",
+				"font": "draw",
+				"align": "middle",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "heading",
+							"attrs": {
+								"dir": "auto",
+								"level": 1
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "Standard Template Library (STL) in C++"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "a2uzzzzyQ2PDtx",
+			"typeName": "shape"
+		},
+		{
+			"x": -4984.333553832486,
+			"y": 1672.3313551021859,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:abtIO05k4DgthHHelnhjr",
+			"type": "arrow",
+			"props": {
+				"kind": "arc",
+				"elbowMidPoint": 0.5,
+				"dash": "draw",
+				"size": "l",
+				"fill": "none",
+				"color": "black",
+				"labelColor": "black",
+				"bend": 0,
+				"start": {
+					"x": 0,
+					"y": 0
+				},
+				"end": {
+					"x": 346.8712625362923,
+					"y": 302.2101699734285
+				},
+				"arrowheadStart": "none",
+				"arrowheadEnd": "arrow",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph"
+						}
+					]
+				},
+				"labelPosition": 0.5,
+				"font": "draw",
+				"scale": 1
+			},
+			"parentId": "page:page",
+			"index": "a2uzzzzkznWnMg8",
+			"typeName": "shape"
+		},
+		{
+			"x": -4094.64379506797,
+			"y": 1971.7133307404451,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:kRt0xFYEz6SQgAx8OCfo6",
+			"type": "geo",
+			"props": {
+				"w": 334.9947814941406,
+				"h": 136.94540895061732,
+				"geo": "rectangle",
+				"dash": "draw",
+				"growY": 0,
+				"url": "",
+				"scale": 1,
+				"color": "black",
+				"labelColor": "black",
+				"fill": "none",
+				"size": "l",
+				"font": "draw",
+				"align": "middle",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"marks": [
+										{
+											"type": "link",
+											"attrs": {
+												"href": "https://www.geeksforgeeks.org/cpp/set-in-cpp-stl/",
+												"target": "_blank",
+												"rel": "noopener",
+												"class": null
+											}
+										},
+										{
+											"type": "bold"
+										}
+									],
+									"text": "Set"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "a2uzzztPQOr3V",
+			"typeName": "shape"
+		},
+		{
+			"x": -1262.595875479679,
+			"y": 1665.8965537157158,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:x6mWwdgH5TZeu0wzlZ87S",
+			"type": "arrow",
+			"props": {
+				"kind": "arc",
+				"elbowMidPoint": 0.5,
+				"dash": "draw",
+				"size": "l",
+				"fill": "none",
+				"color": "black",
+				"labelColor": "black",
+				"bend": 0,
+				"start": {
+					"x": 0,
+					"y": 0
+				},
+				"end": {
+					"x": -334.04741440121916,
+					"y": 287.97054561182176
+				},
+				"arrowheadStart": "none",
+				"arrowheadEnd": "arrow",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph"
+						}
+					]
+				},
+				"labelPosition": 0.5,
+				"font": "draw",
+				"scale": 1
+			},
+			"parentId": "page:page",
+			"index": "a2uzzzx9TJiUl",
+			"typeName": "shape"
+		},
+		{
+			"x": -3672.811081412917,
+			"y": 1975.1669004109185,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:xJ9BMILeq6-zAJeCO81XA",
+			"type": "geo",
+			"props": {
+				"w": 334.9947814941406,
+				"h": 136.94540895061732,
+				"geo": "rectangle",
+				"dash": "draw",
+				"growY": 0,
+				"url": "",
+				"scale": 1,
+				"color": "black",
+				"labelColor": "black",
+				"fill": "none",
+				"size": "l",
+				"font": "draw",
+				"align": "middle",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"marks": [
+										{
+											"type": "link",
+											"attrs": {
+												"href": "https://www.geeksforgeeks.org/cpp/multiset-in-cpp-stl/",
+												"target": "_blank",
+												"rel": "noopener",
+												"class": null
+											}
+										},
+										{
+											"type": "bold"
+										}
+									],
+									"text": "Multiset"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "a2uzzzzJJPnqn",
+			"typeName": "shape"
+		},
+		{
+			"x": -6998.14983028295,
+			"y": 1671.2181652941351,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:0dSqO50UElyVpni_G1oWp",
+			"type": "arrow",
+			"props": {
+				"kind": "arc",
+				"elbowMidPoint": 0.5,
+				"dash": "draw",
+				"size": "l",
+				"fill": "none",
+				"color": "black",
+				"labelColor": "black",
+				"bend": 0,
+				"start": {
+					"x": 0,
+					"y": 0
+				},
+				"end": {
+					"x": -37.299768785527704,
+					"y": 284.3267340191637
+				},
+				"arrowheadStart": "none",
+				"arrowheadEnd": "arrow",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph"
+						}
+					]
+				},
+				"labelPosition": 0.5,
+				"font": "draw",
+				"scale": 1
+			},
+			"parentId": "page:page",
+			"index": "a6SWPK4V",
+			"typeName": "shape"
+		},
+		{
+			"meta": {},
+			"id": "binding:kQF5CcjkeXr3WN0FADlNa",
+			"type": "arrow",
+			"fromId": "shape:abtIO05k4DgthHHelnhjr",
+			"toId": "shape:ALHE72dPYWqvkzFWFfYW5",
+			"props": {
+				"isPrecise": true,
+				"isExact": false,
+				"normalizedAnchor": {
+					"x": 0.5,
+					"y": 0.5
+				},
+				"snap": "center",
+				"terminal": "start"
+			},
+			"typeName": "binding"
+		},
+		{
+			"x": 3021.1787467681143,
+			"y": 469.6015381528239,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:L3SvAcc5JPMmK65jYngyt",
+			"type": "geo",
+			"props": {
+				"w": 334.9027217050287,
+				"h": 136.94540895061732,
+				"geo": "rectangle",
+				"dash": "draw",
+				"growY": 0,
+				"url": "",
+				"scale": 1,
+				"color": "black",
+				"labelColor": "black",
+				"fill": "semi",
+				"size": "l",
+				"font": "draw",
+				"align": "middle",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "heading",
+							"attrs": {
+								"dir": "auto",
+								"level": 2
+							},
+							"content": [
+								{
+									"type": "text",
+									"marks": [
+										{
+											"type": "bold"
+										}
+									],
+									"text": "Iterators"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "a1ztA2T0O",
+			"typeName": "shape"
+		},
+		{
+			"meta": {},
+			"id": "binding:wQ5dp1QMHzy5cbv98G3uL",
+			"type": "arrow",
+			"fromId": "shape:aePpAdbxglHxWkrhatAuY",
+			"toId": "shape:OKUMwgk1zGreNIKk8AzUj",
+			"props": {
+				"isPrecise": true,
+				"isExact": false,
+				"normalizedAnchor": {
+					"x": 0.5,
+					"y": 0.49999999999999917
+				},
+				"snap": "center",
+				"terminal": "end"
+			},
+			"typeName": "binding"
+		},
+		{
+			"meta": {},
+			"id": "binding:azxE396ZGywcFSxarQjQP",
+			"type": "arrow",
+			"fromId": "shape:0dSqO50UElyVpni_G1oWp",
+			"toId": "shape:XNPUP2pqj0LZZw9jT3zdS",
+			"props": {
+				"isPrecise": false,
+				"isExact": false,
+				"normalizedAnchor": {
+					"x": 0.5,
+					"y": 0.5
+				},
+				"snap": "center",
+				"terminal": "start"
+			},
+			"typeName": "binding"
+		},
+		{
+			"x": -7142.779547977485,
+			"y": 1611.745540688457,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:XNPUP2pqj0LZZw9jT3zdS",
+			"type": "geo",
+			"props": {
+				"w": 334.9947814941406,
+				"h": 136.94540895061732,
+				"geo": "rectangle",
+				"dash": "draw",
+				"growY": 0,
+				"url": "",
+				"scale": 1,
+				"color": "black",
+				"labelColor": "black",
+				"fill": "solid",
+				"size": "l",
+				"font": "draw",
+				"align": "middle",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "Sequence Containers"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "a2xvUoWJ",
+			"typeName": "shape"
+		},
+		{
+			"x": -4709.737824716471,
+			"y": 1974.8835655183786,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:OGv4ElAOLmycxA7GFktMy",
+			"type": "geo",
+			"props": {
+				"w": 334.9947814941406,
+				"h": 136.94540895061732,
+				"geo": "rectangle",
+				"dash": "draw",
+				"growY": 0,
+				"url": "",
+				"scale": 1,
+				"color": "black",
+				"labelColor": "black",
+				"fill": "none",
+				"size": "l",
+				"font": "draw",
+				"align": "middle",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"marks": [
+										{
+											"type": "link",
+											"attrs": {
+												"href": "https://www.geeksforgeeks.org/cpp/priority-queue-in-cpp-stl/",
+												"target": "_blank",
+												"rel": "noopener",
+												"class": null
+											}
+										},
+										{
+											"type": "bold"
+										}
+									],
+									"text": "Priority Queue"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "a2uzzzzkzKiUj",
+			"typeName": "shape"
+		},
+		{
+			"x": 185.76855801136207,
+			"y": 143.415293876776,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:vA4onShMRGkDP45hNUM9t",
+			"type": "arrow",
+			"props": {
+				"kind": "arc",
+				"elbowMidPoint": 0.5,
+				"dash": "draw",
+				"size": "m",
+				"fill": "none",
+				"color": "black",
+				"labelColor": "black",
+				"bend": 0,
+				"start": {
+					"x": 185.31421173186936,
+					"y": -456.15981550829645
+				},
+				"end": {
+					"x": 1828.862763439,
+					"y": 966.810015545102
+				},
+				"arrowheadStart": "none",
+				"arrowheadEnd": "arrow",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph"
+						}
+					]
+				},
+				"labelPosition": 0.5,
+				"font": "draw",
+				"scale": 1
+			},
+			"parentId": "page:page",
+			"index": "aLzWZ0xH",
+			"typeName": "shape"
+		},
+		{
+			"x": -31.76494488737717,
+			"y": 417.49919283433167,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:BZpatSzrs4T4Hk7opw5Uo",
+			"type": "geo",
+			"props": {
+				"w": 334.9947814941406,
+				"h": 136.94540895061732,
+				"geo": "rectangle",
+				"dash": "draw",
+				"growY": 0,
+				"url": "",
+				"scale": 1,
+				"color": "black",
+				"labelColor": "black",
+				"fill": "semi",
+				"size": "l",
+				"font": "draw",
+				"align": "middle",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "heading",
+							"attrs": {
+								"dir": "auto",
+								"level": 2
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "Algorithms"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "a1zOYM8t",
+			"typeName": "shape"
+		},
+		{
+			"x": -171.30621497020638,
+			"y": -1087.886910320878,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:EH03NFSVxa9nqfEhaJDN7",
+			"type": "geo",
+			"props": {
+				"w": 621.405069426929,
+				"h": 176.5854949951172,
+				"geo": "rectangle",
+				"dash": "draw",
+				"growY": 0,
+				"url": "",
+				"scale": 1,
+				"color": "black",
+				"labelColor": "black",
+				"fill": "pattern",
+				"size": "xl",
+				"font": "draw",
+				"align": "middle",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "heading",
+							"attrs": {
+								"dir": "auto",
+								"level": 2
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "Components of STL"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "a1",
+			"typeName": "shape"
+		},
+		{
+			"meta": {},
+			"id": "binding:g1oMIsPCKAOQo5_fg_NNl",
+			"type": "arrow",
+			"fromId": "shape:IJEYA59JX_8ATsGYAFY3l",
+			"toId": "shape:pDmopD9frS9RwfMqzhYaU",
+			"props": {
+				"isPrecise": true,
+				"isExact": false,
+				"normalizedAnchor": {
+					"x": 0.5,
+					"y": 0.49999999999999917
+				},
+				"snap": "center",
+				"terminal": "end"
+			},
+			"typeName": "binding"
+		},
+		{
+			"meta": {},
+			"id": "binding:JdwiHigKss4t3r0kwgdKL",
+			"type": "arrow",
+			"fromId": "shape:DVLcqQ-B5IZZfbj3eCKfB",
+			"toId": "shape:0UFGX5M8lq_Tu6m_EICcY",
+			"props": {
+				"isPrecise": true,
+				"isExact": false,
+				"normalizedAnchor": {
+					"x": 0.5,
+					"y": 0.5000000000000001
+				},
+				"snap": "center",
+				"terminal": "start"
+			},
+			"typeName": "binding"
+		},
+		{
+			"meta": {},
+			"id": "binding:NpdhcAbw7fn8-KUrZXVQp",
+			"type": "arrow",
+			"fromId": "shape:pkt5YS-XMJb47gOwe13MN",
+			"toId": "shape:5Mfbn1b-GdpuE6lKMzRVB",
+			"props": {
+				"isPrecise": true,
+				"isExact": false,
+				"normalizedAnchor": {
+					"x": 0.5,
+					"y": 0.5
+				},
+				"snap": "center",
+				"terminal": "start"
+			},
+			"typeName": "binding"
+		},
+		{
+			"x": 2809.5280196528,
+			"y": 675.9656865363893,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:JcgIspfWJ6m-g7jRZLM6V",
+			"type": "geo",
+			"props": {
+				"w": 771.99560546875,
+				"h": 329.099988131012,
+				"geo": "rectangle",
+				"dash": "draw",
+				"growY": 0,
+				"url": "",
+				"scale": 1,
+				"color": "black",
+				"labelColor": "black",
+				"fill": "solid",
+				"size": "l",
+				"font": "draw",
+				"align": "middle",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "bulletList",
+							"content": [
+								{
+									"type": "listItem",
+									"content": [
+										{
+											"type": "paragraph",
+											"attrs": {
+												"dir": "auto"
+											},
+											"content": [
+												{
+													"type": "text",
+													"marks": [
+														{
+															"type": "link",
+															"attrs": {
+																"href": "https://www.geeksforgeeks.org/cpp/introduction-iterators-c/",
+																"target": "_blank",
+																"rel": "noopener",
+																"class": null
+															}
+														},
+														{
+															"type": "bold"
+														}
+													],
+													"text": "Iterators"
+												},
+												{
+													"type": "text",
+													"text": " are the pointer like objects that are used to point to the memory addresses of STL containers. They are one of the most important components that contributes the most in connecting the STL algorithms with the containers. Iterators are defined inside the "
+												},
+												{
+													"type": "text",
+													"marks": [
+														{
+															"type": "bold"
+														}
+													],
+													"text": "<iterator> "
+												},
+												{
+													"type": "text",
+													"text": "header file."
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "a2uzzzzzNVIK2V",
+			"typeName": "shape"
+		},
+		{
+			"x": -6940.971776964199,
+			"y": 1694.0893363674743,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:Ahu-R65KQyXGuriIFt8oA",
+			"type": "arrow",
+			"props": {
+				"kind": "arc",
+				"elbowMidPoint": 0.5,
+				"dash": "draw",
+				"size": "l",
+				"fill": "none",
+				"color": "black",
+				"labelColor": "black",
+				"bend": 0,
+				"start": {
+					"x": 0,
+					"y": 0
+				},
+				"end": {
+					"x": 385.81790115446165,
+					"y": 270.0324405514293
+				},
+				"arrowheadStart": "none",
+				"arrowheadEnd": "arrow",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph"
+						}
+					]
+				},
+				"labelPosition": 0.5,
+				"font": "draw",
+				"scale": 1
+			},
+			"parentId": "page:page",
+			"index": "a76NJOsV",
+			"typeName": "shape"
+		},
+		{
+			"x": -6217.895365196597,
+			"y": 1962.4501193315257,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:Mm5Ew4NM9kqX9SSJS9qs-",
+			"type": "geo",
+			"props": {
+				"w": 334.9947814941406,
+				"h": 136.94540895061732,
+				"geo": "rectangle",
+				"dash": "draw",
+				"growY": 0,
+				"url": "",
+				"scale": 1,
+				"color": "black",
+				"labelColor": "black",
+				"fill": "none",
+				"size": "l",
+				"font": "draw",
+				"align": "middle",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"marks": [
+										{
+											"type": "link",
+											"attrs": {
+												"href": "https://www.geeksforgeeks.org/cpp/stdarray-in-cpp/",
+												"target": "_blank",
+												"rel": "noopener",
+												"class": null
+											}
+										},
+										{
+											"type": "bold"
+										}
+									],
+									"text": "Array"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "a2uzyJ7lWP",
+			"typeName": "shape"
+		},
+		{
+			"x": -1263.8904229868515,
+			"y": 1664.6020630967273,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:vW8TEv4umeWWuycEDAQd-",
+			"type": "arrow",
+			"props": {
+				"kind": "arc",
+				"elbowMidPoint": 0.5,
+				"dash": "draw",
+				"size": "l",
+				"fill": "none",
+				"color": "black",
+				"labelColor": "black",
+				"bend": 0,
+				"start": {
+					"x": 0,
+					"y": 0
+				},
+				"end": {
+					"x": 346.8712625362923,
+					"y": 302.2101699734285
+				},
+				"arrowheadStart": "none",
+				"arrowheadEnd": "arrow",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph"
+						}
+					]
+				},
+				"labelPosition": 0.5,
+				"font": "draw",
+				"scale": 1
+			},
+			"parentId": "page:page",
+			"index": "a2uzzzzrzoRLtV",
+			"typeName": "shape"
+		},
+		{
+			"meta": {},
+			"id": "binding:ii0rNOv2-bMpVI-zYaHwZ",
+			"type": "arrow",
+			"fromId": "shape:GoRAFJF-FC31bnhoaM4DA",
+			"toId": "shape:XNPUP2pqj0LZZw9jT3zdS",
+			"props": {
+				"isPrecise": true,
+				"isExact": false,
+				"normalizedAnchor": {
+					"x": 0.5,
+					"y": 0.49999999999999917
+				},
+				"snap": "center",
+				"terminal": "end"
+			},
+			"typeName": "binding"
+		},
+		{
+			"meta": {},
+			"id": "binding:WQ51cLg5LWA03elyBMPhu",
+			"type": "arrow",
+			"fromId": "shape:PclsRJfBaRxhU5u9Zetsn",
+			"toId": "shape:xJ9BMILeq6-zAJeCO81XA",
+			"props": {
+				"isPrecise": true,
+				"isExact": false,
+				"normalizedAnchor": {
+					"x": 0.5,
+					"y": 0.49999999999999917
+				},
+				"snap": "center",
+				"terminal": "end"
+			},
+			"typeName": "binding"
+		},
+		{
+			"x": -6683.781545877986,
+			"y": 1964.3681118504646,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:tA3G0iD7wam3PhhD67BOo",
+			"type": "geo",
+			"props": {
+				"w": 334.9947814941406,
+				"h": 136.94540895061732,
+				"geo": "rectangle",
+				"dash": "draw",
+				"growY": 0,
+				"url": "",
+				"scale": 1,
+				"color": "black",
+				"labelColor": "black",
+				"fill": "none",
+				"size": "l",
+				"font": "draw",
+				"align": "middle",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"marks": [
+										{
+											"type": "link",
+											"attrs": {
+												"href": "https://www.geeksforgeeks.org/cpp/forward-list-c-set-1-introduction-important-functions/",
+												"target": "_blank",
+												"rel": "noopener",
+												"class": null
+											}
+										},
+										{
+											"type": "bold"
+										}
+									],
+									"text": "Forward List"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "a2uzzuseIUG",
+			"typeName": "shape"
+		},
+		{
+			"x": -314.86974447534294,
+			"y": 616.8690264637553,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:Vr_Mnph6TJNNdcFby5MEp",
+			"type": "geo",
+			"props": {
+				"w": 903.9943237304688,
+				"h": 1036.970103243033,
+				"geo": "rectangle",
+				"dash": "draw",
+				"growY": 0,
+				"url": "",
+				"scale": 1,
+				"color": "black",
+				"labelColor": "black",
+				"fill": "solid",
+				"size": "l",
+				"font": "draw",
+				"align": "middle",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "bulletList",
+							"content": [
+								{
+									"type": "listItem",
+									"content": [
+										{
+											"type": "paragraph",
+											"attrs": {
+												"dir": "auto"
+											},
+											"content": [
+												{
+													"type": "text",
+													"marks": [
+														{
+															"type": "link",
+															"attrs": {
+																"href": "https://www.geeksforgeeks.org/cpp/c-magicians-stl-algorithms/",
+																"target": "_blank",
+																"rel": "noopener",
+																"class": null
+															}
+														},
+														{
+															"type": "bold"
+														}
+													],
+													"text": "STL algorithms"
+												},
+												{
+													"type": "text",
+													"text": " offer a wide range of functions to perform common operations on data (mainly containers). These functions implement the most efficient version of the algorithm for tasks such as sorting, searching, modifying and manipulating data in containers, etc. All STL algorithms are defined inside the"
+												},
+												{
+													"type": "text",
+													"marks": [
+														{
+															"type": "bold"
+														}
+													],
+													"text": " <algorithm>"
+												},
+												{
+													"type": "text",
+													"text": " and "
+												},
+												{
+													"type": "text",
+													"marks": [
+														{
+															"type": "bold"
+														}
+													],
+													"text": "<numeric>"
+												},
+												{
+													"type": "text",
+													"text": " header file. Some of the most frequently used algorithms are:"
+												}
+											]
+										},
+										{
+											"type": "bulletList",
+											"content": [
+												{
+													"type": "listItem",
+													"content": [
+														{
+															"type": "paragraph",
+															"attrs": {
+																"dir": "auto"
+															},
+															"content": [
+																{
+																	"type": "text",
+																	"marks": [
+																		{
+																			"type": "link",
+																			"attrs": {
+																				"href": "https://www.geeksforgeeks.org/cpp/sort-algorithms-the-c-standard-template-library-stl/",
+																				"target": "_blank",
+																				"rel": "noopener",
+																				"class": null
+																			}
+																		},
+																		{
+																			"type": "bold"
+																		}
+																	],
+																	"text": "Sort"
+																},
+																{
+																	"type": "text",
+																	"text": " : Arranges elements in ascending order (default)."
+																}
+															]
+														}
+													]
+												},
+												{
+													"type": "listItem",
+													"content": [
+														{
+															"type": "paragraph",
+															"attrs": {
+																"dir": "auto"
+															},
+															"content": [
+																{
+																	"type": "text",
+																	"marks": [
+																		{
+																			"type": "link",
+																			"attrs": {
+																				"href": "https://www.geeksforgeeks.org/cpp/binary-search-algorithms-the-c-standard-template-library-stl/",
+																				"target": "_blank",
+																				"rel": "noopener",
+																				"class": null
+																			}
+																		},
+																		{
+																			"type": "bold"
+																		}
+																	],
+																	"text": "Binary Search"
+																},
+																{
+																	"type": "text",
+																	"text": " : Checks whether a value exists in a sorted range."
+																}
+															]
+														}
+													]
+												},
+												{
+													"type": "listItem",
+													"content": [
+														{
+															"type": "paragraph",
+															"attrs": {
+																"dir": "auto"
+															},
+															"content": [
+																{
+																	"type": "text",
+																	"marks": [
+																		{
+																			"type": "link",
+																			"attrs": {
+																				"href": "https://www.geeksforgeeks.org/cpp/std-find-in-cpp/",
+																				"target": "_blank",
+																				"rel": "noopener",
+																				"class": null
+																			}
+																		},
+																		{
+																			"type": "bold"
+																		}
+																	],
+																	"text": "Find"
+																},
+																{
+																	"type": "text",
+																	"text": " : Searches for the first occurrence of a given value."
+																}
+															]
+														}
+													]
+												},
+												{
+													"type": "listItem",
+													"content": [
+														{
+															"type": "paragraph",
+															"attrs": {
+																"dir": "auto"
+															},
+															"content": [
+																{
+																	"type": "text",
+																	"marks": [
+																		{
+																			"type": "link",
+																			"attrs": {
+																				"href": "https://www.geeksforgeeks.org/cpp/std-count-cpp-stl/",
+																				"target": "_blank",
+																				"rel": "noopener",
+																				"class": null
+																			}
+																		},
+																		{
+																			"type": "bold"
+																		}
+																	],
+																	"text": "Count"
+																},
+																{
+																	"type": "text",
+																	"text": " : Counts how many times a value appears in the given range."
+																}
+															]
+														}
+													]
+												},
+												{
+													"type": "listItem",
+													"content": [
+														{
+															"type": "paragraph",
+															"attrs": {
+																"dir": "auto"
+															},
+															"content": [
+																{
+																	"type": "text",
+																	"marks": [
+																		{
+																			"type": "link",
+																			"attrs": {
+																				"href": "https://www.geeksforgeeks.org/cpp/stdreverse-in-c/",
+																				"target": "_blank",
+																				"rel": "noopener",
+																				"class": null
+																			}
+																		},
+																		{
+																			"type": "bold"
+																		}
+																	],
+																	"text": "Reverse"
+																},
+																{
+																	"type": "text",
+																	"text": " : Reverses the order of elements in the given range."
+																}
+															]
+														}
+													]
+												},
+												{
+													"type": "listItem",
+													"content": [
+														{
+															"type": "paragraph",
+															"attrs": {
+																"dir": "auto"
+															},
+															"content": [
+																{
+																	"type": "text",
+																	"marks": [
+																		{
+																			"type": "link",
+																			"attrs": {
+																				"href": "https://www.geeksforgeeks.org/cpp/accumulate-and-partial_sum-in-c-stl-numeric-header/",
+																				"target": "_blank",
+																				"rel": "noopener",
+																				"class": null
+																			}
+																		},
+																		{
+																			"type": "bold"
+																		}
+																	],
+																	"text": "Accumulate"
+																},
+																{
+																	"type": "text",
+																	"text": " : Computes the sum of all elements in the range."
+																}
+															]
+														}
+													]
+												},
+												{
+													"type": "listItem",
+													"content": [
+														{
+															"type": "paragraph",
+															"attrs": {
+																"dir": "auto"
+															},
+															"content": [
+																{
+																	"type": "text",
+																	"marks": [
+																		{
+																			"type": "link",
+																			"attrs": {
+																				"href": "https://www.geeksforgeeks.org/cpp/stdunique-in-cpp/",
+																				"target": "_blank",
+																				"rel": "noopener",
+																				"class": null
+																			}
+																		},
+																		{
+																			"type": "bold"
+																		}
+																	],
+																	"text": "Unique"
+																},
+																{
+																	"type": "text",
+																	"text": " : Removes consecutive duplicate elements."
+																}
+															]
+														}
+													]
+												},
+												{
+													"type": "listItem",
+													"content": [
+														{
+															"type": "paragraph",
+															"attrs": {
+																"dir": "auto"
+															},
+															"content": [
+																{
+																	"type": "text",
+																	"marks": [
+																		{
+																			"type": "link",
+																			"attrs": {
+																				"href": "https://www.geeksforgeeks.org/cpp/lower_bound-in-cpp/",
+																				"target": "_blank",
+																				"rel": "noopener",
+																				"class": null
+																			}
+																		},
+																		{
+																			"type": "bold"
+																		}
+																	],
+																	"text": "Lower bound"
+																},
+																{
+																	"type": "text",
+																	"text": " : Returns iterator to the first element ≥ value in a sorted range."
+																}
+															]
+														}
+													]
+												},
+												{
+													"type": "listItem",
+													"content": [
+														{
+															"type": "paragraph",
+															"attrs": {
+																"dir": "auto"
+															},
+															"content": [
+																{
+																	"type": "text",
+																	"marks": [
+																		{
+																			"type": "link",
+																			"attrs": {
+																				"href": "https://www.geeksforgeeks.org/cpp/upper_bound-in-cpp/",
+																				"target": "_blank",
+																				"rel": "noopener",
+																				"class": null
+																			}
+																		},
+																		{
+																			"type": "bold"
+																		}
+																	],
+																	"text": "Upper bound"
+																},
+																{
+																	"type": "text",
+																	"text": " : Returns iterator to the first element > value in a sorted range."
+																}
+															]
+														}
+													]
+												},
+												{
+													"type": "listItem",
+													"content": [
+														{
+															"type": "paragraph",
+															"attrs": {
+																"dir": "auto"
+															},
+															"content": [
+																{
+																	"type": "text",
+																	"marks": [
+																		{
+																			"type": "link",
+																			"attrs": {
+																				"href": "https://www.geeksforgeeks.org/cpp/stdreplace-stdreplace_if-c/",
+																				"target": "_blank",
+																				"rel": "noopener",
+																				"class": null
+																			}
+																		},
+																		{
+																			"type": "bold"
+																		}
+																	],
+																	"text": "Replace"
+																},
+																{
+																	"type": "text",
+																	"text": " : Replaces all occurrences of old value with new value in the given range."
+																}
+															]
+														}
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "a2uzzzzy3zVYr",
+			"typeName": "shape"
+		},
+		{
+			"x": -3241.8898956489675,
+			"y": 1977.37438557533,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:27CgAOsk9l3WegbF2_GWZ",
+			"type": "geo",
+			"props": {
+				"w": 334.9947814941406,
+				"h": 136.94540895061732,
+				"geo": "rectangle",
+				"dash": "draw",
+				"growY": 0,
+				"url": "",
+				"scale": 1,
+				"color": "black",
+				"labelColor": "black",
+				"fill": "none",
+				"size": "l",
+				"font": "draw",
+				"align": "middle",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"marks": [
+										{
+											"type": "link",
+											"attrs": {
+												"href": "https://www.geeksforgeeks.org/cpp/map-associative-containers-the-c-standard-template-library-stl/",
+												"target": "_blank",
+												"rel": "noopener",
+												"class": null
+											}
+										},
+										{
+											"type": "bold"
+										}
+									],
+									"text": "Map"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "a2uzzzzNrAMuT",
+			"typeName": "shape"
+		},
+		{
+			"x": -3204.576412216525,
+			"y": 1655.771236768006,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:PclsRJfBaRxhU5u9Zetsn",
+			"type": "arrow",
+			"props": {
+				"kind": "arc",
+				"elbowMidPoint": 0.5,
+				"dash": "draw",
+				"size": "l",
+				"fill": "none",
+				"color": "black",
+				"labelColor": "black",
+				"bend": 0,
+				"start": {
+					"x": 0,
+					"y": 0
+				},
+				"end": {
+					"x": -46.66344285102696,
+					"y": 287.9705456118219
+				},
+				"arrowheadStart": "none",
+				"arrowheadEnd": "arrow",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph"
+						}
+					]
+				},
+				"labelPosition": 0.5,
+				"font": "draw",
+				"scale": 1
+			},
+			"parentId": "page:page",
+			"index": "a2uzzzzJcyZ8MZ",
+			"typeName": "shape"
+		},
+		{
+			"x": -4983.039006325314,
+			"y": 1673.6258457211743,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:IJEYA59JX_8ATsGYAFY3l",
+			"type": "arrow",
+			"props": {
+				"kind": "arc",
+				"elbowMidPoint": 0.5,
+				"dash": "draw",
+				"size": "l",
+				"fill": "none",
+				"color": "black",
+				"labelColor": "black",
+				"bend": 0,
+				"start": {
+					"x": 0,
+					"y": 0
+				},
+				"end": {
+					"x": -334.04741440121916,
+					"y": 287.97054561182176
+				},
+				"arrowheadStart": "none",
+				"arrowheadEnd": "arrow",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph"
+						}
+					]
+				},
+				"labelPosition": 0.5,
+				"font": "draw",
+				"scale": 1
+			},
+			"parentId": "page:page",
+			"index": "a2uzzzss1NtId",
+			"typeName": "shape"
+		},
+		{
+			"meta": {},
+			"id": "binding:r861qcuPV6T-5L_Y9GBTF",
+			"type": "arrow",
+			"fromId": "shape:vA4onShMRGkDP45hNUM9t",
+			"toId": "shape:oinwrvbNa2FcVOUhwuBq4",
+			"props": {
+				"isPrecise": true,
+				"isExact": false,
+				"normalizedAnchor": {
+					"x": 0.5000000000000001,
+					"y": 0.5
+				},
+				"snap": "center",
+				"terminal": "end"
+			},
+			"typeName": "binding"
+		},
+		{
+			"x": -3233.055888492473,
+			"y": 1666.1274461608311,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:86jVahYLGTJEmdl_nSpB_",
+			"type": "arrow",
+			"props": {
+				"kind": "arc",
+				"elbowMidPoint": 0.5,
+				"dash": "draw",
+				"size": "l",
+				"fill": "none",
+				"color": "black",
+				"labelColor": "black",
+				"bend": 0,
+				"start": {
+					"x": 0,
+					"y": 0
+				},
+				"end": {
+					"x": 346.8712625362923,
+					"y": 302.2101699734285
+				},
+				"arrowheadStart": "none",
+				"arrowheadEnd": "arrow",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph"
+						}
+					]
+				},
+				"labelPosition": 0.5,
+				"font": "draw",
+				"scale": 1
+			},
+			"parentId": "page:page",
+			"index": "a2uzzzzlxnP08mG",
+			"typeName": "shape"
+		},
+		{
+			"meta": {},
+			"id": "binding:b9A5_3QU5XJTiQzcCjUMn",
+			"type": "arrow",
+			"fromId": "shape:78_je0cI7I65EkVGLfhE5",
+			"toId": "shape:XNPUP2pqj0LZZw9jT3zdS",
+			"props": {
+				"isPrecise": false,
+				"isExact": false,
+				"normalizedAnchor": {
+					"x": 0.5,
+					"y": 0.5
+				},
+				"snap": "center",
+				"terminal": "start"
+			},
+			"typeName": "binding"
+		},
+		{
+			"x": -865.2935875545725,
+			"y": 1971.7974641099281,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:l-lm6_SRmfMjKnHQHNUfU",
+			"type": "geo",
+			"props": {
+				"w": 334.9947814941406,
+				"h": 136.94540895061732,
+				"geo": "rectangle",
+				"dash": "draw",
+				"growY": 0,
+				"url": "",
+				"scale": 1,
+				"color": "black",
+				"labelColor": "black",
+				"fill": "none",
+				"size": "l",
+				"font": "draw",
+				"align": "middle",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"marks": [
+										{
+											"type": "link",
+											"attrs": {
+												"href": "https://www.geeksforgeeks.org/cpp/unordered_multimap-and-its-application/",
+												"target": "_blank",
+												"rel": "noopener",
+												"class": null
+											}
+										},
+										{
+											"type": "bold"
+										}
+									],
+									"text": "Unordered Multimap"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "a2uzzzzlzeRDu7V",
+			"typeName": "shape"
+		},
+		{
+			"meta": {},
+			"id": "binding:8Ey_SW2otS9DWv2tCKcBt",
+			"type": "arrow",
+			"fromId": "shape:mbvMdbaxirdLJdqIQrjpB",
+			"toId": "shape:27CgAOsk9l3WegbF2_GWZ",
+			"props": {
+				"isPrecise": true,
+				"isExact": false,
+				"normalizedAnchor": {
+					"x": 0.5,
+					"y": 0.49999999999999917
+				},
+				"snap": "center",
+				"terminal": "end"
+			},
+			"typeName": "binding"
+		},
+		{
+			"x": -2125.4783295623483,
+			"y": 1970.1879476763413,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:9yudpCDR0qduAfrjCPEUN",
+			"type": "geo",
+			"props": {
+				"w": 334.9947814941406,
+				"h": 136.94540895061732,
+				"geo": "rectangle",
+				"dash": "draw",
+				"growY": 0,
+				"url": "",
+				"scale": 1,
+				"color": "black",
+				"labelColor": "black",
+				"fill": "none",
+				"size": "l",
+				"font": "draw",
+				"align": "middle",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"marks": [
+										{
+											"type": "link",
+											"attrs": {
+												"href": "https://www.geeksforgeeks.org/cpp/unordered_set-in-cpp-stl/",
+												"target": "_blank",
+												"rel": "noopener",
+												"class": null
+											}
+										},
+										{
+											"type": "bold"
+										}
+									],
+									"text": "Unordered Set"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "a2uzzztzWP5TO",
+			"typeName": "shape"
+		},
+		{
+			"x": 180.9287607514559,
+			"y": 125.66972506086813,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:DVLcqQ-B5IZZfbj3eCKfB",
+			"type": "arrow",
+			"props": {
+				"kind": "arc",
+				"elbowMidPoint": 0.5,
+				"dash": "draw",
+				"size": "m",
+				"fill": "none",
+				"color": "black",
+				"labelColor": "black",
+				"bend": 0,
+				"start": {
+					"x": -42.244757259012204,
+					"y": -470.64426905826804
+				},
+				"end": {
+					"x": 62.86603544673221,
+					"y": 228.79108646293002
+				},
+				"arrowheadStart": "none",
+				"arrowheadEnd": "arrow",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph"
+						}
+					]
+				},
+				"labelPosition": 0.5,
+				"font": "draw",
+				"scale": 1
+			},
+			"parentId": "page:page",
+			"index": "aMHS42bV",
+			"typeName": "shape"
+		},
+		{
+			"meta": {},
+			"id": "page:page",
+			"name": "Page 1",
+			"index": "a1",
+			"typeName": "page"
+		},
+		{
+			"gridSize": 10,
+			"name": "",
+			"meta": {},
+			"id": "document:document",
+			"typeName": "document"
+		},
+		{
+			"meta": {},
+			"id": "binding:T1vlzGLigFzpIZ8B0r2EQ",
+			"type": "arrow",
+			"fromId": "shape:CR2HEpKxi_a7njmb9henw",
+			"toId": "shape:emTXLoRjbCtHHUkIN9zbR",
+			"props": {
+				"isPrecise": false,
+				"isExact": false,
+				"normalizedAnchor": {
+					"x": 0.5,
+					"y": 0.5
+				},
+				"snap": "center",
+				"terminal": "start"
+			},
+			"typeName": "binding"
+		},
+		{
+			"followingUserId": null,
+			"opacityForNextShape": 1,
+			"stylesForNextShape": {
+				"tldraw:geo": "rectangle",
+				"tldraw:size": "xl",
+				"tldraw:fill": "pattern",
+				"tldraw:horizontalAlign": "start"
+			},
+			"brush": null,
+			"scribbles": [],
+			"cursor": {
+				"type": "move",
+				"rotation": 0
+			},
+			"isFocusMode": false,
+			"exportBackground": true,
+			"isDebugMode": false,
+			"isToolLocked": false,
+			"screenBounds": {
+				"x": 0,
+				"y": 0,
+				"w": 1024.3055419921875,
+				"h": 852.0833129882812
+			},
+			"insets": [
+				false,
+				false,
+				true,
+				false
+			],
+			"zoomBrush": null,
+			"isGridMode": false,
+			"isPenMode": false,
+			"chatMessage": "",
+			"isChatting": false,
+			"highlightedUserIds": [],
+			"isFocused": true,
+			"devicePixelRatio": 1.440000057220459,
+			"isCoarsePointer": false,
+			"isHoveringCanvas": true,
+			"openMenus": [],
+			"isChangingStyle": false,
+			"isReadonly": false,
+			"meta": {},
+			"duplicateProps": null,
+			"id": "instance:instance",
+			"currentPageId": "page:page",
+			"typeName": "instance"
+		},
+		{
+			"x": -357.24171653226335,
+			"y": -826.1960034060567,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:2pA1zZoRUHinyNLceH_K7",
+			"type": "geo",
+			"props": {
+				"w": 1006.9999389648438,
+				"h": 308.231681465066,
+				"geo": "rectangle",
+				"dash": "draw",
+				"growY": 0,
+				"url": "",
+				"scale": 1,
+				"color": "black",
+				"labelColor": "black",
+				"fill": "solid",
+				"size": "l",
+				"font": "draw",
+				"align": "start",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "STL is a collection of pre-built classes and functions that make it easy to manage data using common data structures like vectors, stacks, and maps. It saves time and effort by providing ready-to-use, efficient algorithms and containers."
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "aKZzWiCG",
+			"typeName": "shape"
+		},
+		{
+			"meta": {},
+			"id": "binding:QwVMqVAb5Y9vhNKQ8XOUe",
+			"type": "arrow",
+			"fromId": "shape:vW8TEv4umeWWuycEDAQd-",
+			"toId": "shape:5Mfbn1b-GdpuE6lKMzRVB",
+			"props": {
+				"isPrecise": true,
+				"isExact": false,
+				"normalizedAnchor": {
+					"x": 0.5,
+					"y": 0.5
+				},
+				"snap": "center",
+				"terminal": "start"
+			},
+			"typeName": "binding"
+		},
+		{
+			"meta": {},
+			"id": "binding:NUAB7ihzxL0Fi6xn7CuGF",
+			"type": "arrow",
+			"fromId": "shape:mbvMdbaxirdLJdqIQrjpB",
+			"toId": "shape:SyLEvLqfVtFLzX-CN8iOf",
+			"props": {
+				"isPrecise": true,
+				"isExact": false,
+				"normalizedAnchor": {
+					"x": 0.5,
+					"y": 0.5
+				},
+				"snap": "center",
+				"terminal": "start"
+			},
+			"typeName": "binding"
+		},
+		{
+			"meta": {},
+			"id": "binding:U5NDHvI8s9bpICeZIk65G",
+			"type": "arrow",
+			"fromId": "shape:vW8TEv4umeWWuycEDAQd-",
+			"toId": "shape:l-lm6_SRmfMjKnHQHNUfU",
+			"props": {
+				"isPrecise": true,
+				"isExact": false,
+				"normalizedAnchor": {
+					"x": 0.5,
+					"y": 0.5000000000000008
+				},
+				"snap": "center",
+				"terminal": "end"
+			},
+			"typeName": "binding"
+		},
+		{
+			"x": -3399.4646235339974,
+			"y": 1601.546308158725,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:SyLEvLqfVtFLzX-CN8iOf",
+			"type": "geo",
+			"props": {
+				"w": 334.9947814941406,
+				"h": 136.94540895061732,
+				"geo": "rectangle",
+				"dash": "draw",
+				"growY": 0,
+				"url": "",
+				"scale": 1,
+				"color": "black",
+				"labelColor": "black",
+				"fill": "solid",
+				"size": "l",
+				"font": "draw",
+				"align": "middle",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "Sequence Containers"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "a2umIpm1J",
+			"typeName": "shape"
+		},
+		{
+			"x": 2231.944633008111,
+			"y": 2491.920256681297,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:NYptLgHisd_DFEQSI8-Um",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "xl",
+				"w": 1862.7186279296875,
+				"font": "draw",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "source : "
+								},
+								{
+									"type": "text",
+									"marks": [
+										{
+											"type": "link",
+											"attrs": {
+												"href": "https://www.geeksforgeeks.org/cpp/the-c-standard-template-library-stl/",
+												"target": "_blank",
+												"rel": "noopener noreferrer nofollow",
+												"class": null
+											}
+										}
+									],
+									"text": "https://www.geeksforgeeks.org/cpp/the-c-standard-template-library-stl/"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "aPyiR70V",
+			"typeName": "shape"
+		},
+		{
+			"meta": {},
+			"id": "binding:o9mT5HPzu8Qnb4Tm41v9i",
+			"type": "arrow",
+			"fromId": "shape:SWL9nuOL1oRaI-LqLgUZE",
+			"toId": "shape:0UFGX5M8lq_Tu6m_EICcY",
+			"props": {
+				"isPrecise": true,
+				"isExact": false,
+				"normalizedAnchor": {
+					"x": 0.5,
+					"y": 0.5000000000000001
+				},
+				"snap": "center",
+				"terminal": "start"
+			},
+			"typeName": "binding"
+		},
+		{
+			"x": -8260.30085671682,
+			"y": -1569.751951722163,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:Fr1Qqs1iCUu2sLcAqF4Qs",
+			"type": "geo",
+			"props": {
+				"w": 12388.135104444107,
+				"h": 4026.8663138634683,
+				"geo": "rectangle",
+				"dash": "draw",
+				"growY": 0,
+				"url": "",
+				"scale": 1,
+				"color": "black",
+				"labelColor": "black",
+				"fill": "none",
+				"size": "l",
+				"font": "draw",
+				"align": "start",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph"
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "aNX5JyoV",
+			"typeName": "shape"
+		},
+		{
+			"x": -4008.7878657802303,
+			"y": 789.35201111491,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:GoRAFJF-FC31bnhoaM4DA",
+			"type": "arrow",
+			"props": {
+				"kind": "arc",
+				"elbowMidPoint": 0.5,
+				"dash": "draw",
+				"size": "l",
+				"fill": "none",
+				"color": "black",
+				"labelColor": "black",
+				"bend": 0,
+				"start": {
+					"x": 0,
+					"y": 0
+				},
+				"end": {
+					"x": -2788.5491554248965,
+					"y": 840.4890711037378
+				},
+				"arrowheadStart": "none",
+				"arrowheadEnd": "arrow",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph"
+						}
+					]
+				},
+				"labelPosition": 0.5,
+				"font": "draw",
+				"scale": 1
+			},
+			"parentId": "page:page",
+			"index": "aCv7L1oV",
+			"typeName": "shape"
+		},
+		{
+			"meta": {},
+			"id": "binding:hvvvlGHbJrkF2fvkIw5WP",
+			"type": "arrow",
+			"fromId": "shape:78_je0cI7I65EkVGLfhE5",
+			"toId": "shape:dhboF_ot8PBpCYDGAokmz",
+			"props": {
+				"isPrecise": true,
+				"isExact": false,
+				"normalizedAnchor": {
+					"x": 0.5,
+					"y": 0.5000000000000008
+				},
+				"snap": "center",
+				"terminal": "end"
+			},
+			"typeName": "binding"
+		},
+		{
+			"x": -7141.992987829131,
+			"y": 1960.9544234368675,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:uWLrErH_cLFXl0019S3zB",
+			"type": "geo",
+			"props": {
+				"w": 334.9947814941406,
+				"h": 136.94540895061732,
+				"geo": "rectangle",
+				"dash": "draw",
+				"growY": 0,
+				"url": "",
+				"scale": 1,
+				"color": "black",
+				"labelColor": "black",
+				"fill": "none",
+				"size": "l",
+				"font": "draw",
+				"align": "middle",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"marks": [
+										{
+											"type": "link",
+											"attrs": {
+												"href": "https://www.geeksforgeeks.org/cpp/list-cpp-stl/",
+												"target": "_blank",
+												"rel": "noopener",
+												"class": null
+											}
+										},
+										{
+											"type": "bold"
+										}
+									],
+									"text": "List"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "a2uzvpkNld",
+			"typeName": "shape"
+		},
+		{
+			"x": -367.68303886179456,
+			"y": 5167.089427022292,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:9Pw_faKPNurebRzAkLnRJ",
+			"type": "geo",
+			"props": {
+				"w": 200,
+				"h": 200,
+				"geo": "rectangle",
+				"dash": "draw",
+				"growY": 0,
+				"url": "",
+				"scale": 1,
+				"color": "black",
+				"labelColor": "black",
+				"fill": "none",
+				"size": "l",
+				"font": "draw",
+				"align": "start",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph"
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "aOhJgmJV",
+			"typeName": "shape"
+		},
+		{
+			"meta": {},
+			"id": "binding:XZ7NQ_xN5JFKCyVxVlQiN",
+			"type": "arrow",
+			"fromId": "shape:tZR1h08bs81lQiS-XAOm4",
+			"toId": "shape:SyLEvLqfVtFLzX-CN8iOf",
+			"props": {
+				"isPrecise": true,
+				"isExact": false,
+				"normalizedAnchor": {
+					"x": 0.5,
+					"y": 0.5
+				},
+				"snap": "center",
+				"terminal": "start"
+			},
+			"typeName": "binding"
+		},
+		{
+			"meta": {},
+			"id": "binding:aOTt4qfXQqf1cqYTeBK-b",
+			"type": "arrow",
+			"fromId": "shape:NZpqwd_QM4M2IMGjdVbkr",
+			"toId": "shape:XNPUP2pqj0LZZw9jT3zdS",
+			"props": {
+				"isPrecise": false,
+				"isExact": false,
+				"normalizedAnchor": {
+					"x": 0.5,
+					"y": 0.5
+				},
+				"snap": "center",
+				"terminal": "start"
+			},
+			"typeName": "binding"
+		},
+		{
+			"x": -4955.854077556538,
+			"y": 1661.9751457093607,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:aePpAdbxglHxWkrhatAuY",
+			"type": "arrow",
+			"props": {
+				"kind": "arc",
+				"elbowMidPoint": 0.5,
+				"dash": "draw",
+				"size": "l",
+				"fill": "none",
+				"color": "black",
+				"labelColor": "black",
+				"bend": 0,
+				"start": {
+					"x": 0,
+					"y": 0
+				},
+				"end": {
+					"x": -46.66344285102696,
+					"y": 287.9705456118219
+				},
+				"arrowheadStart": "none",
+				"arrowheadEnd": "arrow",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph"
+						}
+					]
+				},
+				"labelPosition": 0.5,
+				"font": "draw",
+				"scale": 1
+			},
+			"parentId": "page:page",
+			"index": "a2uzzzzFhSjFR",
+			"typeName": "shape"
+		},
+		{
+			"meta": {},
+			"id": "binding:kPai04PlHJEt_gXxrdHt6",
+			"type": "arrow",
+			"fromId": "shape:abtIO05k4DgthHHelnhjr",
+			"toId": "shape:OGv4ElAOLmycxA7GFktMy",
+			"props": {
+				"isPrecise": true,
+				"isExact": false,
+				"normalizedAnchor": {
+					"x": 0.5,
+					"y": 0.5000000000000008
+				},
+				"snap": "center",
+				"terminal": "end"
+			},
+			"typeName": "binding"
+		},
+		{
+			"x": -3226.314620609458,
+			"y": 1666.814911057425,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:mbvMdbaxirdLJdqIQrjpB",
+			"type": "arrow",
+			"props": {
+				"kind": "arc",
+				"elbowMidPoint": 0.5,
+				"dash": "draw",
+				"size": "l",
+				"fill": "none",
+				"color": "black",
+				"labelColor": "black",
+				"bend": 0,
+				"start": {
+					"x": 0,
+					"y": 0
+				},
+				"end": {
+					"x": 109.49991340323459,
+					"y": 305.5877954618338
+				},
+				"arrowheadStart": "none",
+				"arrowheadEnd": "arrow",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph"
+						}
+					]
+				},
+				"labelPosition": 0.5,
+				"font": "draw",
+				"scale": 1
+			},
+			"parentId": "page:page",
+			"index": "a2uzzzzNtPjQVa",
+			"typeName": "shape"
+		},
+		{
+			"x": -6958.125155269205,
+			"y": 1668.3592060922667,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:yvwHZiTWIGYazfebhvBE7",
+			"type": "arrow",
+			"props": {
+				"kind": "arc",
+				"elbowMidPoint": 0.5,
+				"dash": "draw",
+				"size": "l",
+				"fill": "none",
+				"color": "black",
+				"labelColor": "black",
+				"bend": 0,
+				"start": {
+					"x": 0,
+					"y": 0
+				},
+				"end": {
+					"x": 960.4575191792283,
+					"y": 298.6215300285053
+				},
+				"arrowheadStart": "none",
+				"arrowheadEnd": "arrow",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph"
+						}
+					]
+				},
+				"labelPosition": 0.5,
+				"font": "draw",
+				"scale": 1
+			},
+			"parentId": "page:page",
+			"index": "a8z3UUJ4",
+			"typeName": "shape"
+		},
+		{
+			"meta": {},
+			"id": "binding:W3KOJkwFA_RaX-rDSgNo-",
+			"type": "arrow",
+			"fromId": "shape:YXuCga_Ifd5nZfn6WwNyI",
+			"toId": "shape:ALHE72dPYWqvkzFWFfYW5",
+			"props": {
+				"isPrecise": true,
+				"isExact": false,
+				"normalizedAnchor": {
+					"x": 0.5,
+					"y": 0.49999999999999917
+				},
+				"snap": "center",
+				"terminal": "end"
+			},
+			"typeName": "binding"
+		},
+		{
+			"x": -6992.432037514614,
+			"y": 1679.794791628936,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:NZpqwd_QM4M2IMGjdVbkr",
+			"type": "arrow",
+			"props": {
+				"kind": "arc",
+				"elbowMidPoint": 0.5,
+				"dash": "draw",
+				"size": "l",
+				"fill": "none",
+				"color": "black",
+				"labelColor": "black",
+				"bend": 0,
+				"start": {
+					"x": 0,
+					"y": 0
+				},
+				"end": {
+					"x": -431.82841206614285,
+					"y": 281.4680260880991
+				},
+				"arrowheadStart": "none",
+				"arrowheadEnd": "arrow",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph"
+						}
+					]
+				},
+				"labelPosition": 0.5,
+				"font": "draw",
+				"scale": 1
+			},
+			"parentId": "page:page",
+			"index": "a5H8zfeG",
+			"typeName": "shape"
+		},
+		{
+			"meta": {},
+			"id": "binding:dYpZ_mvpVFc6OZ0adZF9c",
+			"type": "arrow",
+			"fromId": "shape:CR2HEpKxi_a7njmb9henw",
+			"toId": "shape:SyLEvLqfVtFLzX-CN8iOf",
+			"props": {
+				"isPrecise": true,
+				"isExact": false,
+				"normalizedAnchor": {
+					"x": 0.5,
+					"y": 0.49999999999999917
+				},
+				"snap": "center",
+				"terminal": "end"
+			},
+			"typeName": "binding"
+		},
+		{
+			"meta": {},
+			"id": "binding:BTJqTo8GuOpBOKlW12uxn",
+			"type": "arrow",
+			"fromId": "shape:NZpqwd_QM4M2IMGjdVbkr",
+			"toId": "shape:FjolVMgvYW-bF84nk2NVy",
+			"props": {
+				"isPrecise": true,
+				"isExact": false,
+				"normalizedAnchor": {
+					"x": 0.5,
+					"y": 0.5000000000000008
+				},
+				"snap": "center",
+				"terminal": "end"
+			},
+			"typeName": "binding"
+		},
+		{
+			"meta": {},
+			"id": "binding:rphugx5tL6RUYBpVIMFeN",
+			"type": "arrow",
+			"fromId": "shape:x6mWwdgH5TZeu0wzlZ87S",
+			"toId": "shape:9yudpCDR0qduAfrjCPEUN",
+			"props": {
+				"isPrecise": true,
+				"isExact": false,
+				"normalizedAnchor": {
+					"x": 0.5,
+					"y": 0.49999999999999917
+				},
+				"snap": "center",
+				"terminal": "end"
+			},
+			"typeName": "binding"
+		},
+		{
+			"x": -4746.864762779652,
+			"y": 367.7515425093502,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:emTXLoRjbCtHHUkIN9zbR",
+			"type": "geo",
+			"props": {
+				"w": 1290.5501063344163,
+				"h": 643.2808194935751,
+				"geo": "rectangle",
+				"dash": "draw",
+				"growY": 0,
+				"url": "",
+				"scale": 1,
+				"color": "black",
+				"labelColor": "black",
+				"fill": "none",
+				"size": "l",
+				"font": "draw",
+				"align": "middle",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph"
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "aANFKUtG",
+			"typeName": "shape"
+		}
+	]
+}
