@@ -61,61 +61,12 @@ void PmergeMe::displaySequence(const std::string& prefix, const std::vector<int>
 	std::cout << std::endl;
 }
 
-// Ford-Johnson merge-insert for vector
-void PmergeMe::mergeInsertVector(std::vector<std::pair<int, int> >& pairs, std::vector<int>& pend, std::vector<int>& main) {
-	// Recursively sort pairs by their maximum element
-	if (pairs.size() <= 1)
-		return;
-	
-	if (pairs.size() == 2) {
-		if (pairs[0].second < pairs[1].second)
-			std::swap(pairs[0], pairs[1]);
-		return;
-	}
-	
-	// Divide pairs into two halves
-	std::vector<std::pair<int, int> > left(pairs.begin(), pairs.begin() + pairs.size() / 2);
-	std::vector<std::pair<int, int> > right(pairs.begin() + pairs.size() / 2, pairs.end());
-	
-	// Extract pend and main from left/right (simplified)
-	std::vector<int> leftPend, rightPend;
-	std::vector<int> leftMain, rightMain;
-	
-	mergeInsertVector(left, leftPend, leftMain);
-	mergeInsertVector(right, rightPend, rightMain);
-	
-	// Merge main chains
-	main.clear();
-	size_t i = 0, j = 0;
-	while (i < leftMain.size() && j < rightMain.size()) {
-		if (leftMain[i] <= rightMain[j])
-			main.push_back(leftMain[i++]);
-		else
-			main.push_back(rightMain[j++]);
-	}
-	while (i < leftMain.size())
-		main.push_back(leftMain[i++]);
-	while (j < rightMain.size())
-		main.push_back(rightMain[j++]);
-	
-	// Combine pend sequences
-	pend.insert(pend.end(), leftPend.begin(), leftPend.end());
-	pend.insert(pend.end(), rightPend.begin(), rightPend.end());
-}
-
-// Ford-Johnson sort for vector
-void PmergeMe::fordJohnsonVector(std::vector<int>& arr) {
-	if (arr.size() <= 1)
-		return;
-	
-	std::vector<std::pair<int, int> > pairs;
-	std::vector<int> straggler;
-	
-	// Step 1: Pair up elements
+// Create pairs and sort them by max value (vector)
+void PmergeMe::createAndSortPairsVector(std::vector<int>& arr, std::vector<std::pair<int, int> >& pairs, std::vector<int>& straggler) {
+	// Create pairs with (min, max) ordering
 	for (size_t i = 0; i + 1 < arr.size(); i += 2) {
 		int a = arr[i];
 		int b = arr[i + 1];
-		// Store as (min, max)
 		pairs.push_back(std::make_pair(std::min(a, b), std::max(a, b)));
 	}
 	
@@ -123,25 +74,23 @@ void PmergeMe::fordJohnsonVector(std::vector<int>& arr) {
 	if (arr.size() % 2 == 1)
 		straggler.push_back(arr.back());
 	
-	// Step 2: Recursively sort pairs by their maximum element
-	if (pairs.size() > 1) {
-		std::vector<int> pend, mainChain;
-		mergeInsertVector(pairs, pend, mainChain);
-	}
-	
-	// Step 3: Sort pairs by their max value
+	// Sort pairs by their max value
 	std::sort(pairs.begin(), pairs.end(), comparePairs);
-	
-	// Step 4: Insert the larger elements into main chain
-	std::vector<int> main;
+}
+
+// Build main chain and pend list from sorted pairs (vector)
+void PmergeMe::buildMainAndPendVector(const std::vector<std::pair<int, int> >& pairs, std::vector<int>& main, std::vector<int>& pend) {
+	// Build main chain from max values
 	for (size_t i = 0; i < pairs.size(); i++)
 		main.push_back(pairs[i].second);
 	
-	// Step 5: Insert smaller elements using binary search
-	std::vector<int> pend;
+	// Build pend from min values
 	for (size_t i = 0; i < pairs.size(); i++)
 		pend.push_back(pairs[i].first);
-	
+}
+
+// Insert pend elements and straggler using binary search (vector)
+void PmergeMe::insertElementsVector(std::vector<int>& main, const std::vector<int>& pend, const std::vector<int>& straggler) {
 	// Generate Jacobsthal numbers for insertion order
 	std::vector<int> jacobsthal = generateJacobsthal(pend.size());
 	std::vector<bool> inserted(pend.size(), false);
@@ -156,7 +105,6 @@ void PmergeMe::fordJohnsonVector(std::vector<int>& arr) {
 		if (inserted[idx])
 			continue;
 		
-		// Binary search insertion position
 		std::vector<int>::iterator pos = std::lower_bound(main.begin(), main.end(), pend[idx]);
 		main.insert(pos, pend[idx]);
 		inserted[idx] = true;
@@ -175,66 +123,37 @@ void PmergeMe::fordJohnsonVector(std::vector<int>& arr) {
 		std::vector<int>::iterator pos = std::lower_bound(main.begin(), main.end(), straggler[0]);
 		main.insert(pos, straggler[0]);
 	}
+}
+
+// Ford-Johnson sort for vector
+void PmergeMe::fordJohnsonVector(std::vector<int>& arr) {
+	if (arr.size() <= 1)
+		return;
+	
+	std::vector<std::pair<int, int> > pairs;
+	std::vector<int> straggler;
+	std::vector<int> main;
+	std::vector<int> pend;
+	
+	// Step 1: Create and sort pairs
+	createAndSortPairsVector(arr, pairs, straggler);
+	
+	// Step 2: Build main chain and pend list
+	buildMainAndPendVector(pairs, main, pend);
+	
+	// Step 3: Insert elements using binary search
+	insertElementsVector(main, pend, straggler);
 	
 	// Copy result back to arr
 	arr = main;
 }
 
-// Ford-Johnson merge-insert for deque
-void PmergeMe::mergeInsertDeque(std::deque<std::pair<int, int> >& pairs, std::deque<int>& pend, std::deque<int>& main) {
-	// Recursively sort pairs by their maximum element
-	if (pairs.size() <= 1)
-		return;
-	
-	if (pairs.size() == 2) {
-		if (pairs[0].second < pairs[1].second)
-			std::swap(pairs[0], pairs[1]);
-		return;
-	}
-	
-	// Divide pairs into two halves
-	std::deque<std::pair<int, int> > left(pairs.begin(), pairs.begin() + pairs.size() / 2);
-	std::deque<std::pair<int, int> > right(pairs.begin() + pairs.size() / 2, pairs.end());
-	
-	// Extract pend and main from left/right
-	std::deque<int> leftPend, rightPend;
-	std::deque<int> leftMain, rightMain;
-	
-	mergeInsertDeque(left, leftPend, leftMain);
-	mergeInsertDeque(right, rightPend, rightMain);
-	
-	// Merge main chains
-	main.clear();
-	size_t i = 0, j = 0;
-	while (i < leftMain.size() && j < rightMain.size()) {
-		if (leftMain[i] <= rightMain[j])
-			main.push_back(leftMain[i++]);
-		else
-			main.push_back(rightMain[j++]);
-	}
-	while (i < leftMain.size())
-		main.push_back(leftMain[i++]);
-	while (j < rightMain.size())
-		main.push_back(rightMain[j++]);
-	
-	// Combine pend sequences
-	pend.insert(pend.end(), leftPend.begin(), leftPend.end());
-	pend.insert(pend.end(), rightPend.begin(), rightPend.end());
-}
-
-// Ford-Johnson sort for deque
-void PmergeMe::fordJohnsonDeque(std::deque<int>& arr) {
-	if (arr.size() <= 1)
-		return;
-	
-	std::deque<std::pair<int, int> > pairs;
-	std::deque<int> straggler;
-	
-	// Step 1: Pair up elements
+// Create pairs and sort them by max value (deque)
+void PmergeMe::createAndSortPairsDeque(std::deque<int>& arr, std::deque<std::pair<int, int> >& pairs, std::deque<int>& straggler) {
+	// Create pairs with (min, max) ordering
 	for (size_t i = 0; i + 1 < arr.size(); i += 2) {
 		int a = arr[i];
 		int b = arr[i + 1];
-		// Store as (min, max)
 		pairs.push_back(std::make_pair(std::min(a, b), std::max(a, b)));
 	}
 	
@@ -242,25 +161,23 @@ void PmergeMe::fordJohnsonDeque(std::deque<int>& arr) {
 	if (arr.size() % 2 == 1)
 		straggler.push_back(arr.back());
 	
-	// Step 2: Recursively sort pairs by their maximum element
-	if (pairs.size() > 1) {
-		std::deque<int> pend, mainChain;
-		mergeInsertDeque(pairs, pend, mainChain);
-	}
-	
-	// Step 3: Sort pairs by their max value
+	// Sort pairs by their max value
 	std::sort(pairs.begin(), pairs.end(), comparePairs);
-	
-	// Step 4: Insert the larger elements into main chain
-	std::deque<int> main;
+}
+
+// Build main chain and pend list from sorted pairs (deque)
+void PmergeMe::buildMainAndPendDeque(const std::deque<std::pair<int, int> >& pairs, std::deque<int>& main, std::deque<int>& pend) {
+	// Build main chain from max values
 	for (size_t i = 0; i < pairs.size(); i++)
 		main.push_back(pairs[i].second);
 	
-	// Step 5: Insert smaller elements using binary search
-	std::deque<int> pend;
+	// Build pend from min values
 	for (size_t i = 0; i < pairs.size(); i++)
 		pend.push_back(pairs[i].first);
-	
+}
+
+// Insert pend elements and straggler using binary search (deque)
+void PmergeMe::insertElementsDeque(std::deque<int>& main, const std::deque<int>& pend, const std::deque<int>& straggler) {
 	// Generate Jacobsthal numbers for insertion order
 	std::vector<int> jacobsthal = generateJacobsthal(pend.size());
 	std::vector<bool> inserted(pend.size(), false);
@@ -275,7 +192,6 @@ void PmergeMe::fordJohnsonDeque(std::deque<int>& arr) {
 		if (inserted[idx])
 			continue;
 		
-		// Binary search insertion position
 		std::deque<int>::iterator pos = std::lower_bound(main.begin(), main.end(), pend[idx]);
 		main.insert(pos, pend[idx]);
 		inserted[idx] = true;
@@ -294,6 +210,26 @@ void PmergeMe::fordJohnsonDeque(std::deque<int>& arr) {
 		std::deque<int>::iterator pos = std::lower_bound(main.begin(), main.end(), straggler[0]);
 		main.insert(pos, straggler[0]);
 	}
+}
+
+// Ford-Johnson sort for deque
+void PmergeMe::fordJohnsonDeque(std::deque<int>& arr) {
+	if (arr.size() <= 1)
+		return;
+	
+	std::deque<std::pair<int, int> > pairs;
+	std::deque<int> straggler;
+	std::deque<int> main;
+	std::deque<int> pend;
+	
+	// Step 1: Create and sort pairs
+	createAndSortPairsDeque(arr, pairs, straggler);
+	
+	// Step 2: Build main chain and pend list
+	buildMainAndPendDeque(pairs, main, pend);
+	
+	// Step 3: Insert elements using binary search
+	insertElementsDeque(main, pend, straggler);
 	
 	// Copy result back to arr
 	arr = main;

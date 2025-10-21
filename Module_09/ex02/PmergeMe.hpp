@@ -24,11 +24,15 @@ private:
 	
 	// Ford-Johnson algorithm for vector
 	void fordJohnsonVector(std::vector<int>& arr);
-	void mergeInsertVector(std::vector<std::pair<int, int> >& pairs, std::vector<int>& pend, std::vector<int>& main);
+	void createAndSortPairsVector(std::vector<int>& arr, std::vector<std::pair<int, int> >& pairs, std::vector<int>& straggler);
+	void buildMainAndPendVector(const std::vector<std::pair<int, int> >& pairs, std::vector<int>& main, std::vector<int>& pend);
+	void insertElementsVector(std::vector<int>& main, const std::vector<int>& pend, const std::vector<int>& straggler);
 	
 	// Ford-Johnson algorithm for deque
 	void fordJohnsonDeque(std::deque<int>& arr);
-	void mergeInsertDeque(std::deque<std::pair<int, int> >& pairs, std::deque<int>& pend, std::deque<int>& main);
+	void createAndSortPairsDeque(std::deque<int>& arr, std::deque<std::pair<int, int> >& pairs, std::deque<int>& straggler);
+	void buildMainAndPendDeque(const std::deque<std::pair<int, int> >& pairs, std::deque<int>& main, std::deque<int>& pend);
+	void insertElementsDeque(std::deque<int>& main, const std::deque<int>& pend, const std::deque<int>& straggler);
 	
 	// Orthodox Canonical Form
 	PmergeMe(const PmergeMe& other);
