@@ -8,10 +8,10 @@ OBJS = $(SRCS:.cpp=.o)
 
 all: $(NAME)
 
-$(NAME): $(OBJS)
+$(NAME): $(OBJS) 
 	$(CXX) $(CXXFLAGS) $(OBJS) -o $(NAME)
 
-%.o: %.cpp
+%.o: %.cpp PmergeMe.hpp
 	$(CXX) $(CXXFLAGS) -c $< -o $@
 
 clean:

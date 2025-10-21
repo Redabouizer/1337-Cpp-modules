@@ -5,6 +5,7 @@
 #include <deque>
 #include <string>
 #include <iostream>
+#include <utility>
 
 class PmergeMe {
 private:
@@ -15,15 +16,19 @@ private:
 	bool parseInput(int argc, char* argv[]);
 	void displaySequence(const std::string& prefix, const std::vector<int>& data) const;
 	
+	// Jacobsthal number generation
+	std::vector<int> generateJacobsthal(int maxSize);
+	
+	// Comparison function for sorting pairs
+	static bool comparePairs(const std::pair<int, int>& a, const std::pair<int, int>& b);
+	
 	// Ford-Johnson algorithm for vector
 	void fordJohnsonVector(std::vector<int>& arr);
-	void mergeInsertVector(std::vector<int>& arr, int left, int right);
-	void insertionSortVector(std::vector<int>& arr, int left, int right);
+	void mergeInsertVector(std::vector<std::pair<int, int> >& pairs, std::vector<int>& pend, std::vector<int>& main);
 	
 	// Ford-Johnson algorithm for deque
 	void fordJohnsonDeque(std::deque<int>& arr);
-	void mergeInsertDeque(std::deque<int>& arr, int left, int right);
-	void insertionSortDeque(std::deque<int>& arr, int left, int right);
+	void mergeInsertDeque(std::deque<std::pair<int, int> >& pairs, std::deque<int>& pend, std::deque<int>& main);
 	
 	// Orthodox Canonical Form
 	PmergeMe(const PmergeMe& other);
